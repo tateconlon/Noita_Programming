@@ -1,0 +1,38 @@
+﻿// Copyright © Sascha Graeff/13Pixels.
+
+namespace ThirteenPixels.Soda
+{
+    using UnityEngine;
+
+    /// <summary>
+    /// A GlobalVariable referencing a GameObject that provides a specified set of multiple components.
+    /// </summary>
+    [CreateAssetMenu(menuName = "Soda/GlobalVariable/GameObject with Component Cache/#TYPE#", order = 500)]
+    public class Global#TYPE# : GlobalGameObjectWithComponentCacheBase<Global#TYPE#.Components>
+    {
+        public struct Components
+        {
+            #PER_COMPONENT public readonly #CTYPE# #CNAME#;
+
+            public Components(GameObject gameObject)
+            {
+                #PER_COMPONENT #CNAME# = gameObject.GetComponent<#CTYPE#>();
+            }
+            
+            public bool isValid
+            {
+                get
+                {
+                    return #ALL_CNAMES#;
+                }
+            }
+        }
+
+        protected override bool TryCreateComponentCache(GameObject gameObject, out Components componentCache)
+        {
+            componentCache = new Components(gameObject);
+
+            return componentCache.isValid;
+        }
+    }
+}

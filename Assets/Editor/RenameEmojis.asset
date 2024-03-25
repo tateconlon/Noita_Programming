@@ -1,0 +1,899 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706350fd11edde24a980444b23799147, type: 3}
+  m_Name: RenameEmojis
+  m_EditorClassIdentifier: 
+  emojiUnicodeToNameJson: "{\r\n    \"2049\": \"exclamation question mark\",\r\n   
+    \"2122\": \"trade mark\",\r\n    \"2139\": \"information\",\r\n    \"2194\":
+    \"left-right arrow\",\r\n    \"2195\": \"up-down arrow\",\r\n    \"2196\": \"up-left
+    arrow\",\r\n    \"2197\": \"up-right arrow\",\r\n    \"2198\": \"down-right arrow\",\r\n   
+    \"2199\": \"down-left arrow\",\r\n    \"2328\": \"keyboard\",\r\n    \"2600\":
+    \"sun\",\r\n    \"2601\": \"cloud\",\r\n    \"2602\": \"umbrella\",\r\n    \"2603\":
+    \"snowman\",\r\n    \"2604\": \"comet\",\r\n    \"2611\": \"check box with check\",\r\n   
+    \"2614\": \"umbrella with rain drops\",\r\n    \"2615\": \"hot beverage\",\r\n   
+    \"2618\": \"shamrock\",\r\n    \"2620\": \"skull and crossbones\",\r\n    \"2622\":
+    \"radioactive\",\r\n    \"2623\": \"biohazard\",\r\n    \"2626\": \"orthodox
+    cross\",\r\n    \"2638\": \"wheel of dharma\",\r\n    \"2639\": \"frowning face\",\r\n   
+    \"2640\": \"female sign\",\r\n    \"2642\": \"male sign\",\r\n    \"2648\": \"Aries\",\r\n   
+    \"2649\": \"Taurus\",\r\n    \"2650\": \"Sagittarius\",\r\n    \"2651\": \"Capricorn\",\r\n   
+    \"2652\": \"Aquarius\",\r\n    \"2653\": \"Pisces\",\r\n    \"2660\": \"spade
+    suit\",\r\n    \"2663\": \"club suit\",\r\n    \"2665\": \"heart suit\",\r\n   
+    \"2666\": \"diamond suit\",\r\n    \"2668\": \"hot springs\",\r\n    \"2692\":
+    \"hammer and pick\",\r\n    \"2693\": \"anchor\",\r\n    \"2694\": \"crossed
+    swords\",\r\n    \"2695\": \"medical symbol\",\r\n    \"2696\": \"balance scale\",\r\n   
+    \"2697\": \"alembic\",\r\n    \"2699\": \"gear\",\r\n    \"2702\": \"scissors\",\r\n   
+    \"2705\": \"check mark button\",\r\n    \"2708\": \"airplane\",\r\n    \"2709\":
+    \"envelope\",\r\n    \"2712\": \"black nib\",\r\n    \"2714\": \"check mark\",\r\n   
+    \"2716\": \"multiply\",\r\n    \"2721\": \"star of David\",\r\n    \"2728\":
+    \"sparkles\",\r\n    \"2733\": \"eight-spoked asterisk\",\r\n    \"2734\": \"eight-pointed
+    star\",\r\n    \"2744\": \"snowflake\",\r\n    \"2747\": \"sparkle\",\r\n   
+    \"2753\": \"red question mark\",\r\n    \"2754\": \"white question mark\",\r\n   
+    \"2755\": \"white exclamation mark\",\r\n    \"2757\": \"red exclamation mark\",\r\n   
+    \"2763\": \"heart exclamation\",\r\n    \"2764\": \"red heart\",\r\n    \"2795\":
+    \"plus\",\r\n    \"2796\": \"minus\",\r\n    \"2797\": \"divide\",\r\n    \"2934\":
+    \"right arrow curving up\",\r\n    \"2935\": \"right arrow curving down\",\r\n   
+    \"3030\": \"wavy dash\",\r\n    \"3297\": \"Japanese \u201Ccongratulations\u201D
+    button\",\r\n    \"3299\": \"Japanese \u201Csecret\u201D button\",\r\n    \"1f600\":
+    \"grinning face\",\r\n    \"1f603\": \"grinning face with big eyes\",\r\n   
+    \"1f604\": \"grinning face with smiling eyes\",\r\n    \"1f601\": \"beaming face
+    with smiling eyes\",\r\n    \"1f606\": \"grinning squinting face\",\r\n    \"1f605\":
+    \"grinning face with sweat\",\r\n    \"1f923\": \"rolling on the floor laughing\",\r\n   
+    \"1f602\": \"face with tears of joy\",\r\n    \"1f642\": \"slightly smiling face\",\r\n   
+    \"1f643\": \"upside-down face\",\r\n    \"1fae0\": \"melting face\",\r\n    \"1f609\":
+    \"winking face\",\r\n    \"1f60a\": \"smiling face with smiling eyes\",\r\n   
+    \"1f607\": \"smiling face with halo\",\r\n    \"1f970\": \"smiling face with
+    hearts\",\r\n    \"1f60d\": \"smiling face with heart-eyes\",\r\n    \"1f929\":
+    \"star-struck\",\r\n    \"1f618\": \"face blowing a kiss\",\r\n    \"1f617\":
+    \"kissing face\",\r\n    \"263a\": \"smiling face\",\r\n    \"1f61a\": \"kissing
+    face with closed eyes\",\r\n    \"1f619\": \"kissing face with smiling eyes\",\r\n   
+    \"1f972\": \"smiling face with tear\",\r\n    \"1f60b\": \"face savoring food\",\r\n   
+    \"1f61b\": \"face with tongue\",\r\n    \"1f61c\": \"winking face with tongue\",\r\n   
+    \"1f92a\": \"zany face\",\r\n    \"1f61d\": \"squinting face with tongue\",\r\n   
+    \"1f911\": \"money-mouth face\",\r\n    \"1f917\": \"smiling face with open hands\",\r\n   
+    \"1f92d\": \"face with hand over mouth\",\r\n    \"1fae2\": \"face with open
+    eyes and hand over mouth\",\r\n    \"1fae3\": \"face with peeking eye\",\r\n   
+    \"1f92b\": \"shushing face\",\r\n    \"1f914\": \"thinking face\",\r\n    \"1fae1\":
+    \"saluting face\",\r\n    \"1f910\": \"zipper-mouth face\",\r\n    \"1f928\":
+    \"face with raised eyebrow\",\r\n    \"1f610\": \"neutral face\",\r\n    \"1f611\":
+    \"expressionless face\",\r\n    \"1f636\": \"face without mouth\",\r\n    \"1fae5\":
+    \"dotted line face\",\r\n    \"1f636_200d_1f32b_fe0f\": \"face in clouds\",\r\n   
+    \"1f60f\": \"smirking face\",\r\n    \"1f612\": \"unamused face\",\r\n    \"1f644\":
+    \"face with rolling eyes\",\r\n    \"1f62c\": \"grimacing face\",\r\n    \"1f62e_200d_1f4a8\":
+    \"face exhaling\",\r\n    \"1f925\": \"lying face\",\r\n    \"1fae8\": \"\u229B
+    shaking face\",\r\n    \"1f60c\": \"relieved face\",\r\n    \"1f614\": \"pensive
+    face\",\r\n    \"1f62a\": \"sleepy face\",\r\n    \"1f924\": \"drooling face\",\r\n   
+    \"1f634\": \"sleeping face\",\r\n    \"1f637\": \"face with medical mask\",\r\n   
+    \"1f912\": \"face with thermometer\",\r\n    \"1f915\": \"face with head-bandage\",\r\n   
+    \"1f922\": \"nauseated face\",\r\n    \"1f92e\": \"face vomiting\",\r\n    \"1f927\":
+    \"sneezing face\",\r\n    \"1f975\": \"hot face\",\r\n    \"1f976\": \"cold face\",\r\n   
+    \"1f974\": \"woozy face\",\r\n    \"1f635\": \"face with crossed-out eyes\",\r\n   
+    \"1f635_200d_1f4ab\": \"face with spiral eyes\",\r\n    \"1f92f\": \"exploding
+    head\",\r\n    \"1f920\": \"cowboy hat face\",\r\n    \"1f973\": \"partying face\",\r\n   
+    \"1f978\": \"disguised face\",\r\n    \"1f60e\": \"smiling face with sunglasses\",\r\n   
+    \"1f913\": \"nerd face\",\r\n    \"1f9d0\": \"face with monocle\",\r\n    \"1f615\":
+    \"confused face\",\r\n    \"1fae4\": \"face with diagonal mouth\",\r\n    \"1f61f\":
+    \"worried face\",\r\n    \"1f641\": \"slightly frowning face\",\r\n    \"1f62e\":
+    \"face with open mouth\",\r\n    \"1f62f\": \"hushed face\",\r\n    \"1f632\":
+    \"astonished face\",\r\n    \"1f633\": \"flushed face\",\r\n    \"1f97a\": \"pleading
+    face\",\r\n    \"1f979\": \"face holding back tears\",\r\n    \"1f626\": \"frowning
+    face with open mouth\",\r\n    \"1f627\": \"anguished face\",\r\n    \"1f628\":
+    \"fearful face\",\r\n    \"1f630\": \"anxious face with sweat\",\r\n    \"1f625\":
+    \"sad but relieved face\",\r\n    \"1f622\": \"crying face\",\r\n    \"1f62d\":
+    \"loudly crying face\",\r\n    \"1f631\": \"face screaming in fear\",\r\n   
+    \"1f616\": \"confounded face\",\r\n    \"1f623\": \"persevering face\",\r\n   
+    \"1f61e\": \"disappointed face\",\r\n    \"1f613\": \"downcast face with sweat\",\r\n   
+    \"1f629\": \"weary face\",\r\n    \"1f62b\": \"tired face\",\r\n    \"1f971\":
+    \"yawning face\",\r\n    \"1f624\": \"face with steam from nose\",\r\n    \"1f621\":
+    \"enraged face\",\r\n    \"1f620\": \"angry face\",\r\n    \"1f92c\": \"face
+    with symbols on mouth\",\r\n    \"1f608\": \"smiling face with horns\",\r\n   
+    \"1f47f\": \"angry face with horns\",\r\n    \"1f480\": \"skull\",\r\n    \"1f4a9\":
+    \"pile of poo\",\r\n    \"1f921\": \"clown face\",\r\n    \"1f479\": \"ogre\",\r\n   
+    \"1f47a\": \"goblin\",\r\n    \"1f47b\": \"ghost\",\r\n    \"1f47d\": \"alien\",\r\n   
+    \"1f47e\": \"alien monster\",\r\n    \"1f916\": \"robot\",\r\n    \"1f63a\":
+    \"grinning cat\",\r\n    \"1f638\": \"grinning cat with smiling eyes\",\r\n   
+    \"1f639\": \"cat with tears of joy\",\r\n    \"1f63b\": \"smiling cat with heart-eyes\",\r\n   
+    \"1f63c\": \"cat with wry smile\",\r\n    \"1f63d\": \"kissing cat\",\r\n   
+    \"1f640\": \"weary cat\",\r\n    \"1f63f\": \"crying cat\",\r\n    \"1f63e\":
+    \"pouting cat\",\r\n    \"1f648\": \"see-no-evil monkey\",\r\n    \"1f649\":
+    \"hear-no-evil monkey\",\r\n    \"1f64a\": \"speak-no-evil monkey\",\r\n    \"1f48c\":
+    \"love letter\",\r\n    \"1f498\": \"heart with arrow\",\r\n    \"1f49d\": \"heart
+    with ribbon\",\r\n    \"1f496\": \"sparkling heart\",\r\n    \"1f497\": \"growing
+    heart\",\r\n    \"1f493\": \"beating heart\",\r\n    \"1f49e\": \"revolving hearts\",\r\n   
+    \"1f495\": \"two hearts\",\r\n    \"1f49f\": \"heart decoration\",\r\n    \"1f494\":
+    \"broken heart\",\r\n    \"2764_fe0f_200d_1f525\": \"heart on fire\",\r\n   
+    \"2764_fe0f_200d_1fa79\": \"mending heart\",\r\n    \"1fa77\": \"\u229B pink
+    heart\",\r\n    \"1f9e1\": \"orange heart\",\r\n    \"1f49b\": \"yellow heart\",\r\n   
+    \"1f49a\": \"green heart\",\r\n    \"1f499\": \"blue heart\",\r\n    \"1fa75\":
+    \"\u229B light blue heart\",\r\n    \"1f49c\": \"purple heart\",\r\n    \"1f90e\":
+    \"brown heart\",\r\n    \"1f5a4\": \"black heart\",\r\n    \"1fa76\": \"\u229B
+    grey heart\",\r\n    \"1f90d\": \"white heart\",\r\n    \"1f48b\": \"kiss mark\",\r\n   
+    \"1f4af\": \"hundred points\",\r\n    \"1f4a2\": \"anger symbol\",\r\n    \"1f4a5\":
+    \"collision\",\r\n    \"1f4ab\": \"dizzy\",\r\n    \"1f4a6\": \"sweat droplets\",\r\n   
+    \"1f4a8\": \"dashing away\",\r\n    \"1f573\": \"hole\",\r\n    \"1f4ac\": \"speech
+    balloon\",\r\n    \"1f441_fe0f_200d_1f5e8_fe0f\": \"eye in speech bubble\",\r\n   
+    \"1f5e8\": \"left speech bubble\",\r\n    \"1f5ef\": \"right anger bubble\",\r\n   
+    \"1f4ad\": \"thought balloon\",\r\n    \"1f4a4\": \"ZZZ\",\r\n    \"1f44b\":
+    \"waving hand\",\r\n    \"1f91a\": \"raised back of hand\",\r\n    \"1f590\":
+    \"hand with fingers splayed\",\r\n    \"270b\": \"raised hand\",\r\n    \"1f596\":
+    \"vulcan salute\",\r\n    \"1faf1\": \"rightwards hand\",\r\n    \"1faf2\": \"leftwards
+    hand\",\r\n    \"1faf3\": \"palm down hand\",\r\n    \"1faf4\": \"palm up hand\",\r\n   
+    \"1faf7\": \"\u229B leftwards pushing hand\",\r\n    \"1faf8\": \"\u229B rightwards
+    pushing hand\",\r\n    \"1f44c\": \"OK hand\",\r\n    \"1f90c\": \"pinched fingers\",\r\n   
+    \"1f90f\": \"pinching hand\",\r\n    \"270c\": \"victory hand\",\r\n    \"1f91e\":
+    \"crossed fingers\",\r\n    \"1faf0\": \"hand with index finger and thumb crossed\",\r\n   
+    \"1f91f\": \"love-you gesture\",\r\n    \"1f918\": \"sign of the horns\",\r\n   
+    \"1f919\": \"call me hand\",\r\n    \"1f448\": \"backhand index pointing left\",\r\n   
+    \"1f449\": \"backhand index pointing right\",\r\n    \"1f446\": \"backhand index
+    pointing up\",\r\n    \"1f595\": \"middle finger\",\r\n    \"1f447\": \"backhand
+    index pointing down\",\r\n    \"261d\": \"index pointing up\",\r\n    \"1faf5\":
+    \"index pointing at the viewer\",\r\n    \"1f44d\": \"thumbs up\",\r\n    \"1f44e\":
+    \"thumbs down\",\r\n    \"270a\": \"raised fist\",\r\n    \"1f44a\": \"oncoming
+    fist\",\r\n    \"1f91b\": \"left-facing fist\",\r\n    \"1f91c\": \"right-facing
+    fist\",\r\n    \"1f44f\": \"clapping hands\",\r\n    \"1f64c\": \"raising hands\",\r\n   
+    \"1faf6\": \"heart hands\",\r\n    \"1f450\": \"open hands\",\r\n    \"1f932\":
+    \"palms up together\",\r\n    \"1f91d\": \"handshake\",\r\n    \"1f64f\": \"folded
+    hands\",\r\n    \"270d\": \"writing hand\",\r\n    \"1f485\": \"nail polish\",\r\n   
+    \"1f933\": \"selfie\",\r\n    \"1f4aa\": \"flexed biceps\",\r\n    \"1f9be\":
+    \"mechanical arm\",\r\n    \"1f9bf\": \"mechanical leg\",\r\n    \"1f9b5\": \"leg\",\r\n   
+    \"1f9b6\": \"foot\",\r\n    \"1f442\": \"ear\",\r\n    \"1f9bb\": \"ear with
+    hearing aid\",\r\n    \"1f443\": \"nose\",\r\n    \"1f9e0\": \"brain\",\r\n   
+    \"1fac0\": \"anatomical heart\",\r\n    \"1fac1\": \"lungs\",\r\n    \"1f9b7\":
+    \"tooth\",\r\n    \"1f9b4\": \"bone\",\r\n    \"1f440\": \"eyes\",\r\n    \"1f441\":
+    \"eye\",\r\n    \"1f445\": \"tongue\",\r\n    \"1f444\": \"mouth\",\r\n    \"1fae6\":
+    \"biting lip\",\r\n    \"1f476\": \"baby\",\r\n    \"1f9d2\": \"child\",\r\n   
+    \"1f466\": \"boy\",\r\n    \"1f467\": \"girl\",\r\n    \"1f9d1\": \"person\",\r\n   
+    \"1f471\": \"person: blond hair\",\r\n    \"1f468\": \"man\",\r\n    \"1f9d4\":
+    \"person: beard\",\r\n    \"1f9d4_200d_2642_fe0f\": \"man: beard\",\r\n    \"1f9d4_200d_2640_fe0f\":
+    \"woman: beard\",\r\n    \"1f468_200d_1f9b0\": \"man: red hair\",\r\n    \"1f468_200d_1f9b1\":
+    \"man: curly hair\",\r\n    \"1f468_200d_1f9b3\": \"man: white hair\",\r\n   
+    \"1f468_200d_1f9b2\": \"man: bald\",\r\n    \"1f469\": \"woman\",\r\n    \"1f469_200d_1f9b0\":
+    \"woman: red hair\",\r\n    \"1f9d1_200d_1f9b0\": \"person: red hair\",\r\n   
+    \"1f469_200d_1f9b1\": \"woman: curly hair\",\r\n    \"1f9d1_200d_1f9b1\": \"person:
+    curly hair\",\r\n    \"1f469_200d_1f9b3\": \"woman: white hair\",\r\n    \"1f9d1_200d_1f9b3\":
+    \"person: white hair\",\r\n    \"1f469_200d_1f9b2\": \"woman: bald\",\r\n   
+    \"1f9d1_200d_1f9b2\": \"person: bald\",\r\n    \"1f471_200d_2640_fe0f\": \"woman:
+    blond hair\",\r\n    \"1f471_200d_2642_fe0f\": \"man: blond hair\",\r\n    \"1f9d3\":
+    \"older person\",\r\n    \"1f474\": \"old man\",\r\n    \"1f475\": \"old woman\",\r\n   
+    \"1f64d\": \"person frowning\",\r\n    \"1f64d_200d_2642_fe0f\": \"man frowning\",\r\n   
+    \"1f64d_200d_2640_fe0f\": \"woman frowning\",\r\n    \"1f64e\": \"person pouting\",\r\n   
+    \"1f64e_200d_2642_fe0f\": \"man pouting\",\r\n    \"1f64e_200d_2640_fe0f\": \"woman
+    pouting\",\r\n    \"1f645\": \"person gesturing NO\",\r\n    \"1f645_200d_2642_fe0f\":
+    \"man gesturing NO\",\r\n    \"1f645_200d_2640_fe0f\": \"woman gesturing NO\",\r\n   
+    \"1f646\": \"person gesturing OK\",\r\n    \"1f646_200d_2642_fe0f\": \"man gesturing
+    OK\",\r\n    \"1f646_200d_2640_fe0f\": \"woman gesturing OK\",\r\n    \"1f481\":
+    \"person tipping hand\",\r\n    \"1f481_200d_2642_fe0f\": \"man tipping hand\",\r\n   
+    \"1f481_200d_2640_fe0f\": \"woman tipping hand\",\r\n    \"1f64b\": \"person
+    raising hand\",\r\n    \"1f64b_200d_2642_fe0f\": \"man raising hand\",\r\n   
+    \"1f64b_200d_2640_fe0f\": \"woman raising hand\",\r\n    \"1f9cf\": \"deaf person\",\r\n   
+    \"1f9cf_200d_2642_fe0f\": \"deaf man\",\r\n    \"1f9cf_200d_2640_fe0f\": \"deaf
+    woman\",\r\n    \"1f647\": \"person bowing\",\r\n    \"1f647_200d_2642_fe0f\":
+    \"man bowing\",\r\n    \"1f647_200d_2640_fe0f\": \"woman bowing\",\r\n    \"1f926\":
+    \"person facepalming\",\r\n    \"1f926_200d_2642_fe0f\": \"man facepalming\",\r\n   
+    \"1f926_200d_2640_fe0f\": \"woman facepalming\",\r\n    \"1f937\": \"person shrugging\",\r\n   
+    \"1f937_200d_2642_fe0f\": \"man shrugging\",\r\n    \"1f937_200d_2640_fe0f\":
+    \"woman shrugging\",\r\n    \"1f9d1_200d_2695_fe0f\": \"health worker\",\r\n   
+    \"1f468_200d_2695_fe0f\": \"man health worker\",\r\n    \"1f469_200d_2695_fe0f\":
+    \"woman health worker\",\r\n    \"1f9d1_200d_1f393\": \"student\",\r\n    \"1f468_200d_1f393\":
+    \"man student\",\r\n    \"1f469_200d_1f393\": \"woman student\",\r\n    \"1f9d1_200d_1f3eb\":
+    \"teacher\",\r\n    \"1f468_200d_1f3eb\": \"man teacher\",\r\n    \"1f469_200d_1f3eb\":
+    \"woman teacher\",\r\n    \"1f9d1_200d_2696_fe0f\": \"judge\",\r\n    \"1f468_200d_2696_fe0f\":
+    \"man judge\",\r\n    \"1f469_200d_2696_fe0f\": \"woman judge\",\r\n    \"1f9d1_200d_1f33e\":
+    \"farmer\",\r\n    \"1f468_200d_1f33e\": \"man farmer\",\r\n    \"1f469_200d_1f33e\":
+    \"woman farmer\",\r\n    \"1f9d1_200d_1f373\": \"cook\",\r\n    \"1f468_200d_1f373\":
+    \"man cook\",\r\n    \"1f469_200d_1f373\": \"woman cook\",\r\n    \"1f9d1_200d_1f527\":
+    \"mechanic\",\r\n    \"1f468_200d_1f527\": \"man mechanic\",\r\n    \"1f469_200d_1f527\":
+    \"woman mechanic\",\r\n    \"1f9d1_200d_1f3ed\": \"factory worker\",\r\n    \"1f468_200d_1f3ed\":
+    \"man factory worker\",\r\n    \"1f469_200d_1f3ed\": \"woman factory worker\",\r\n   
+    \"1f9d1_200d_1f4bc\": \"office worker\",\r\n    \"1f468_200d_1f4bc\": \"man office
+    worker\",\r\n    \"1f469_200d_1f4bc\": \"woman office worker\",\r\n    \"1f9d1_200d_1f52c\":
+    \"scientist\",\r\n    \"1f468_200d_1f52c\": \"man scientist\",\r\n    \"1f469_200d_1f52c\":
+    \"woman scientist\",\r\n    \"1f9d1_200d_1f4bb\": \"technologist\",\r\n    \"1f468_200d_1f4bb\":
+    \"man technologist\",\r\n    \"1f469_200d_1f4bb\": \"woman technologist\",\r\n   
+    \"1f9d1_200d_1f3a4\": \"singer\",\r\n    \"1f468_200d_1f3a4\": \"man singer\",\r\n   
+    \"1f469_200d_1f3a4\": \"woman singer\",\r\n    \"1f9d1_200d_1f3a8\": \"artist\",\r\n   
+    \"1f468_200d_1f3a8\": \"man artist\",\r\n    \"1f469_200d_1f3a8\": \"woman artist\",\r\n   
+    \"1f9d1_200d_2708_fe0f\": \"pilot\",\r\n    \"1f468_200d_2708_fe0f\": \"man pilot\",\r\n   
+    \"1f469_200d_2708_fe0f\": \"woman pilot\",\r\n    \"1f9d1_200d_1f680\": \"astronaut\",\r\n   
+    \"1f468_200d_1f680\": \"man astronaut\",\r\n    \"1f469_200d_1f680\": \"woman
+    astronaut\",\r\n    \"1f9d1_200d_1f692\": \"firefighter\",\r\n    \"1f468_200d_1f692\":
+    \"man firefighter\",\r\n    \"1f469_200d_1f692\": \"woman firefighter\",\r\n   
+    \"1f46e\": \"police officer\",\r\n    \"1f46e_200d_2642_fe0f\": \"man police
+    officer\",\r\n    \"1f46e_200d_2640_fe0f\": \"woman police officer\",\r\n   
+    \"1f575\": \"detective\",\r\n    \"1f575_fe0f_200d_2642_fe0f\": \"man detective\",\r\n   
+    \"1f575_fe0f_200d_2640_fe0f\": \"woman detective\",\r\n    \"1f482\": \"guard\",\r\n   
+    \"1f482_200d_2642_fe0f\": \"man guard\",\r\n    \"1f482_200d_2640_fe0f\": \"woman
+    guard\",\r\n    \"1f977\": \"ninja\",\r\n    \"1f477\": \"construction worker\",\r\n   
+    \"1f477_200d_2642_fe0f\": \"man construction worker\",\r\n    \"1f477_200d_2640_fe0f\":
+    \"woman construction worker\",\r\n    \"1fac5\": \"person with crown\",\r\n   
+    \"1f934\": \"prince\",\r\n    \"1f478\": \"princess\",\r\n    \"1f473\": \"person
+    wearing turban\",\r\n    \"1f473_200d_2642_fe0f\": \"man wearing turban\",\r\n   
+    \"1f473_200d_2640_fe0f\": \"woman wearing turban\",\r\n    \"1f472\": \"person
+    with skullcap\",\r\n    \"1f9d5\": \"woman with headscarf\",\r\n    \"1f935\":
+    \"person in tuxedo\",\r\n    \"1f935_200d_2642_fe0f\": \"man in tuxedo\",\r\n   
+    \"1f935_200d_2640_fe0f\": \"woman in tuxedo\",\r\n    \"1f470\": \"person with
+    veil\",\r\n    \"1f470_200d_2642_fe0f\": \"man with veil\",\r\n    \"1f470_200d_2640_fe0f\":
+    \"woman with veil\",\r\n    \"1f930\": \"pregnant woman\",\r\n    \"1fac3\":
+    \"pregnant man\",\r\n    \"1fac4\": \"pregnant person\",\r\n    \"1f931\": \"breast-feeding\",\r\n   
+    \"1f469_200d_1f37c\": \"woman feeding baby\",\r\n    \"1f468_200d_1f37c\": \"man
+    feeding baby\",\r\n    \"1f9d1_200d_1f37c\": \"person feeding baby\",\r\n   
+    \"1f47c\": \"baby angel\",\r\n    \"1f385\": \"Santa Claus\",\r\n    \"1f936\":
+    \"Mrs. Claus\",\r\n    \"1f9d1_200d_1f384\": \"mx claus\",\r\n    \"1f9b8\":
+    \"superhero\",\r\n    \"1f9b8_200d_2642_fe0f\": \"man superhero\",\r\n    \"1f9b8_200d_2640_fe0f\":
+    \"woman superhero\",\r\n    \"1f9b9\": \"supervillain\",\r\n    \"1f9b9_200d_2642_fe0f\":
+    \"man supervillain\",\r\n    \"1f9b9_200d_2640_fe0f\": \"woman supervillain\",\r\n   
+    \"1f9d9\": \"mage\",\r\n    \"1f9d9_200d_2642_fe0f\": \"man mage\",\r\n    \"1f9d9_200d_2640_fe0f\":
+    \"woman mage\",\r\n    \"1f9da\": \"fairy\",\r\n    \"1f9da_200d_2642_fe0f\":
+    \"man fairy\",\r\n    \"1f9da_200d_2640_fe0f\": \"woman fairy\",\r\n    \"1f9db\":
+    \"vampire\",\r\n    \"1f9db_200d_2642_fe0f\": \"man vampire\",\r\n    \"1f9db_200d_2640_fe0f\":
+    \"woman vampire\",\r\n    \"1f9dc\": \"merperson\",\r\n    \"1f9dc_200d_2642_fe0f\":
+    \"merman\",\r\n    \"1f9dc_200d_2640_fe0f\": \"mermaid\",\r\n    \"1f9dd\": \"elf\",\r\n   
+    \"1f9dd_200d_2642_fe0f\": \"man elf\",\r\n    \"1f9dd_200d_2640_fe0f\": \"woman
+    elf\",\r\n    \"1f9de\": \"genie\",\r\n    \"1f9de_200d_2642_fe0f\": \"man genie\",\r\n   
+    \"1f9de_200d_2640_fe0f\": \"woman genie\",\r\n    \"1f9df\": \"zombie\",\r\n   
+    \"1f9df_200d_2642_fe0f\": \"man zombie\",\r\n    \"1f9df_200d_2640_fe0f\": \"woman
+    zombie\",\r\n    \"1f9cc\": \"troll\",\r\n    \"1f486\": \"person getting massage\",\r\n   
+    \"1f486_200d_2642_fe0f\": \"man getting massage\",\r\n    \"1f486_200d_2640_fe0f\":
+    \"woman getting massage\",\r\n    \"1f487\": \"person getting haircut\",\r\n   
+    \"1f487_200d_2642_fe0f\": \"man getting haircut\",\r\n    \"1f487_200d_2640_fe0f\":
+    \"woman getting haircut\",\r\n    \"1f6b6\": \"person walking\",\r\n    \"1f6b6_200d_2642_fe0f\":
+    \"man walking\",\r\n    \"1f6b6_200d_2640_fe0f\": \"woman walking\",\r\n    \"1f9cd\":
+    \"person standing\",\r\n    \"1f9cd_200d_2642_fe0f\": \"man standing\",\r\n   
+    \"1f9cd_200d_2640_fe0f\": \"woman standing\",\r\n    \"1f9ce\": \"person kneeling\",\r\n   
+    \"1f9ce_200d_2642_fe0f\": \"man kneeling\",\r\n    \"1f9ce_200d_2640_fe0f\":
+    \"woman kneeling\",\r\n    \"1f9d1_200d_1f9af\": \"person with white cane\",\r\n   
+    \"1f468_200d_1f9af\": \"man with white cane\",\r\n    \"1f469_200d_1f9af\": \"woman
+    with white cane\",\r\n    \"1f9d1_200d_1f9bc\": \"person in motorized wheelchair\",\r\n   
+    \"1f468_200d_1f9bc\": \"man in motorized wheelchair\",\r\n    \"1f469_200d_1f9bc\":
+    \"woman in motorized wheelchair\",\r\n    \"1f9d1_200d_1f9bd\": \"person in manual
+    wheelchair\",\r\n    \"1f468_200d_1f9bd\": \"man in manual wheelchair\",\r\n   
+    \"1f469_200d_1f9bd\": \"woman in manual wheelchair\",\r\n    \"1f3c3\": \"person
+    running\",\r\n    \"1f3c3_200d_2642_fe0f\": \"man running\",\r\n    \"1f3c3_200d_2640_fe0f\":
+    \"woman running\",\r\n    \"1f483\": \"woman dancing\",\r\n    \"1f57a\": \"man
+    dancing\",\r\n    \"1f574\": \"person in suit levitating\",\r\n    \"1f46f\":
+    \"people with bunny ears\",\r\n    \"1f46f_200d_2642_fe0f\": \"men with bunny
+    ears\",\r\n    \"1f46f_200d_2640_fe0f\": \"women with bunny ears\",\r\n    \"1f9d6\":
+    \"person in steamy room\",\r\n    \"1f9d6_200d_2642_fe0f\": \"man in steamy room\",\r\n   
+    \"1f9d6_200d_2640_fe0f\": \"woman in steamy room\",\r\n    \"1f9d7\": \"person
+    climbing\",\r\n    \"1f9d7_200d_2642_fe0f\": \"man climbing\",\r\n    \"1f9d7_200d_2640_fe0f\":
+    \"woman climbing\",\r\n    \"1f93a\": \"person fencing\",\r\n    \"1f3c7\": \"horse
+    racing\",\r\n    \"26f7\": \"skier\",\r\n    \"1f3c2\": \"snowboarder\",\r\n   
+    \"1f3cc\": \"person golfing\",\r\n    \"1f3cc_fe0f_200d_2642_fe0f\": \"man golfing\",\r\n   
+    \"1f3cc_fe0f_200d_2640_fe0f\": \"woman golfing\",\r\n    \"1f3c4\": \"person
+    surfing\",\r\n    \"1f3c4_200d_2642_fe0f\": \"man surfing\",\r\n    \"1f3c4_200d_2640_fe0f\":
+    \"woman surfing\",\r\n    \"1f6a3\": \"person rowing boat\",\r\n    \"1f6a3_200d_2642_fe0f\":
+    \"man rowing boat\",\r\n    \"1f6a3_200d_2640_fe0f\": \"woman rowing boat\",\r\n   
+    \"1f3ca\": \"person swimming\",\r\n    \"1f3ca_200d_2642_fe0f\": \"man swimming\",\r\n   
+    \"1f3ca_200d_2640_fe0f\": \"woman swimming\",\r\n    \"26f9\": \"person bouncing
+    ball\",\r\n    \"26f9_fe0f_200d_2642_fe0f\": \"man bouncing ball\",\r\n    \"26f9_fe0f_200d_2640_fe0f\":
+    \"woman bouncing ball\",\r\n    \"1f3cb\": \"person lifting weights\",\r\n   
+    \"1f3cb_fe0f_200d_2642_fe0f\": \"man lifting weights\",\r\n    \"1f3cb_fe0f_200d_2640_fe0f\":
+    \"woman lifting weights\",\r\n    \"1f6b4\": \"person biking\",\r\n    \"1f6b4_200d_2642_fe0f\":
+    \"man biking\",\r\n    \"1f6b4_200d_2640_fe0f\": \"woman biking\",\r\n    \"1f6b5\":
+    \"person mountain biking\",\r\n    \"1f6b5_200d_2642_fe0f\": \"man mountain biking\",\r\n   
+    \"1f6b5_200d_2640_fe0f\": \"woman mountain biking\",\r\n    \"1f938\": \"person
+    cartwheeling\",\r\n    \"1f938_200d_2642_fe0f\": \"man cartwheeling\",\r\n   
+    \"1f938_200d_2640_fe0f\": \"woman cartwheeling\",\r\n    \"1f93c\": \"people
+    wrestling\",\r\n    \"1f93c_200d_2642_fe0f\": \"men wrestling\",\r\n    \"1f93c_200d_2640_fe0f\":
+    \"women wrestling\",\r\n    \"1f93d\": \"person playing water polo\",\r\n   
+    \"1f93d_200d_2642_fe0f\": \"man playing water polo\",\r\n    \"1f93d_200d_2640_fe0f\":
+    \"woman playing water polo\",\r\n    \"1f93e\": \"person playing handball\",\r\n   
+    \"1f93e_200d_2642_fe0f\": \"man playing handball\",\r\n    \"1f93e_200d_2640_fe0f\":
+    \"woman playing handball\",\r\n    \"1f939\": \"person juggling\",\r\n    \"1f939_200d_2642_fe0f\":
+    \"man juggling\",\r\n    \"1f939_200d_2640_fe0f\": \"woman juggling\",\r\n   
+    \"1f9d8\": \"person in lotus position\",\r\n    \"1f9d8_200d_2642_fe0f\": \"man
+    in lotus position\",\r\n    \"1f9d8_200d_2640_fe0f\": \"woman in lotus position\",\r\n   
+    \"1f6c0\": \"person taking bath\",\r\n    \"1f6cc\": \"person in bed\",\r\n   
+    \"1f9d1_200d_1f91d_200d_1f9d1\": \"people holding hands\",\r\n    \"1f46d\":
+    \"women holding hands\",\r\n    \"1f46b\": \"woman and man holding hands\",\r\n   
+    \"1f46c\": \"men holding hands\",\r\n    \"1f48f\": \"kiss\",\r\n    \"1f469_200d_2764_fe0f_200d_1f48b_200d_1f468\":
+    \"kiss: woman, man\",\r\n    \"1f468_200d_2764_fe0f_200d_1f48b_200d_1f468\":
+    \"kiss: man, man\",\r\n    \"1f469_200d_2764_fe0f_200d_1f48b_200d_1f469\": \"kiss:
+    woman, woman\",\r\n    \"1f491\": \"couple with heart\",\r\n    \"1f469_200d_2764_fe0f_200d_1f468\":
+    \"couple with heart: woman, man\",\r\n    \"1f468_200d_2764_fe0f_200d_1f468\":
+    \"couple with heart: man, man\",\r\n    \"1f469_200d_2764_fe0f_200d_1f469\":
+    \"couple with heart: woman, woman\",\r\n    \"1f46a\": \"family\",\r\n    \"1f468_200d_1f469_200d_1f466\":
+    \"family: man, woman, boy\",\r\n    \"1f468_200d_1f469_200d_1f467\": \"family:
+    man, woman, girl\",\r\n    \"1f468_200d_1f469_200d_1f467_200d_1f466\": \"family:
+    man, woman, girl, boy\",\r\n    \"1f468_200d_1f469_200d_1f466_200d_1f466\": \"family:
+    man, woman, boy, boy\",\r\n    \"1f468_200d_1f469_200d_1f467_200d_1f467\": \"family:
+    man, woman, girl, girl\",\r\n    \"1f468_200d_1f468_200d_1f466\": \"family: man,
+    man, boy\",\r\n    \"1f468_200d_1f468_200d_1f467\": \"family: man, man, girl\",\r\n   
+    \"1f468_200d_1f468_200d_1f467_200d_1f466\": \"family: man, man, girl, boy\",\r\n   
+    \"1f468_200d_1f468_200d_1f466_200d_1f466\": \"family: man, man, boy, boy\",\r\n   
+    \"1f468_200d_1f468_200d_1f467_200d_1f467\": \"family: man, man, girl, girl\",\r\n   
+    \"1f469_200d_1f469_200d_1f466\": \"family: woman, woman, boy\",\r\n    \"1f469_200d_1f469_200d_1f467\":
+    \"family: woman, woman, girl\",\r\n    \"1f469_200d_1f469_200d_1f467_200d_1f466\":
+    \"family: woman, woman, girl, boy\",\r\n    \"1f469_200d_1f469_200d_1f466_200d_1f466\":
+    \"family: woman, woman, boy, boy\",\r\n    \"1f469_200d_1f469_200d_1f467_200d_1f467\":
+    \"family: woman, woman, girl, girl\",\r\n    \"1f468_200d_1f466\": \"family:
+    man, boy\",\r\n    \"1f468_200d_1f466_200d_1f466\": \"family: man, boy, boy\",\r\n   
+    \"1f468_200d_1f467\": \"family: man, girl\",\r\n    \"1f468_200d_1f467_200d_1f466\":
+    \"family: man, girl, boy\",\r\n    \"1f468_200d_1f467_200d_1f467\": \"family:
+    man, girl, girl\",\r\n    \"1f469_200d_1f466\": \"family: woman, boy\",\r\n   
+    \"1f469_200d_1f466_200d_1f466\": \"family: woman, boy, boy\",\r\n    \"1f469_200d_1f467\":
+    \"family: woman, girl\",\r\n    \"1f469_200d_1f467_200d_1f466\": \"family: woman,
+    girl, boy\",\r\n    \"1f469_200d_1f467_200d_1f467\": \"family: woman, girl, girl\",\r\n   
+    \"1f5e3\": \"speaking head\",\r\n    \"1f464\": \"bust in silhouette\",\r\n   
+    \"1f465\": \"busts in silhouette\",\r\n    \"1fac2\": \"people hugging\",\r\n   
+    \"1f463\": \"footprints\",\r\n    \"1f9b0\": \"red hair\",\r\n    \"1f9b1\":
+    \"curly hair\",\r\n    \"1f9b3\": \"white hair\",\r\n    \"1f9b2\": \"bald\",\r\n   
+    \"1f435\": \"monkey face\",\r\n    \"1f412\": \"monkey\",\r\n    \"1f98d\": \"gorilla\",\r\n   
+    \"1f9a7\": \"orangutan\",\r\n    \"1f436\": \"dog face\",\r\n    \"1f415\": \"dog\",\r\n   
+    \"1f9ae\": \"guide dog\",\r\n    \"1f415_200d_1f9ba\": \"service dog\",\r\n   
+    \"1f429\": \"poodle\",\r\n    \"1f43a\": \"wolf\",\r\n    \"1f98a\": \"fox\",\r\n   
+    \"1f99d\": \"raccoon\",\r\n    \"1f431\": \"cat face\",\r\n    \"1f408\": \"cat\",\r\n   
+    \"1f408_200d_2b1b\": \"black cat\",\r\n    \"1f981\": \"lion\",\r\n    \"1f42f\":
+    \"tiger face\",\r\n    \"1f405\": \"tiger\",\r\n    \"1f406\": \"leopard\",\r\n   
+    \"1f434\": \"horse face\",\r\n    \"1face\": \"\u229B moose\",\r\n    \"1facf\":
+    \"\u229B donkey\",\r\n    \"1f40e\": \"horse\",\r\n    \"1f984\": \"unicorn\",\r\n   
+    \"1f993\": \"zebra\",\r\n    \"1f98c\": \"deer\",\r\n    \"1f9ac\": \"bison\",\r\n   
+    \"1f42e\": \"cow face\",\r\n    \"1f402\": \"ox\",\r\n    \"1f403\": \"water
+    buffalo\",\r\n    \"1f404\": \"cow\",\r\n    \"1f437\": \"pig face\",\r\n   
+    \"1f416\": \"pig\",\r\n    \"1f417\": \"boar\",\r\n    \"1f43d\": \"pig nose\",\r\n   
+    \"1f40f\": \"ram\",\r\n    \"1f411\": \"ewe\",\r\n    \"1f410\": \"goat\",\r\n   
+    \"1f42a\": \"camel\",\r\n    \"1f42b\": \"two-hump camel\",\r\n    \"1f999\":
+    \"llama\",\r\n    \"1f992\": \"giraffe\",\r\n    \"1f418\": \"elephant\",\r\n   
+    \"1f9a3\": \"mammoth\",\r\n    \"1f98f\": \"rhinoceros\",\r\n    \"1f99b\": \"hippopotamus\",\r\n   
+    \"1f42d\": \"mouse face\",\r\n    \"1f401\": \"mouse\",\r\n    \"1f400\": \"rat\",\r\n   
+    \"1f439\": \"hamster\",\r\n    \"1f430\": \"rabbit face\",\r\n    \"1f407\":
+    \"rabbit\",\r\n    \"1f43f\": \"chipmunk\",\r\n    \"1f9ab\": \"beaver\",\r\n   
+    \"1f994\": \"hedgehog\",\r\n    \"1f987\": \"bat\",\r\n    \"1f43b\": \"bear\",\r\n   
+    \"1f43b_200d_2744_fe0f\": \"polar bear\",\r\n    \"1f428\": \"koala\",\r\n   
+    \"1f43c\": \"panda\",\r\n    \"1f9a5\": \"sloth\",\r\n    \"1f9a6\": \"otter\",\r\n   
+    \"1f9a8\": \"skunk\",\r\n    \"1f998\": \"kangaroo\",\r\n    \"1f9a1\": \"badger\",\r\n   
+    \"1f43e\": \"paw prints\",\r\n    \"1f983\": \"turkey\",\r\n    \"1f414\": \"chicken\",\r\n   
+    \"1f413\": \"rooster\",\r\n    \"1f423\": \"hatching chick\",\r\n    \"1f424\":
+    \"baby chick\",\r\n    \"1f425\": \"front-facing baby chick\",\r\n    \"1f426\":
+    \"bird\",\r\n    \"1f427\": \"penguin\",\r\n    \"1f54a\": \"dove\",\r\n    \"1f985\":
+    \"eagle\",\r\n    \"1f986\": \"duck\",\r\n    \"1f9a2\": \"swan\",\r\n    \"1f989\":
+    \"owl\",\r\n    \"1f9a4\": \"dodo\",\r\n    \"1fab6\": \"feather\",\r\n    \"1f9a9\":
+    \"flamingo\",\r\n    \"1f99a\": \"peacock\",\r\n    \"1f99c\": \"parrot\",\r\n   
+    \"1fabd\": \"\u229B wing\",\r\n    \"1f426_200d_2b1b\": \"\u229B black bird\",\r\n   
+    \"1fabf\": \"\u229B goose\",\r\n    \"1f438\": \"frog\",\r\n    \"1f40a\": \"crocodile\",\r\n   
+    \"1f422\": \"turtle\",\r\n    \"1f98e\": \"lizard\",\r\n    \"1f40d\": \"snake\",\r\n   
+    \"1f432\": \"dragon face\",\r\n    \"1f409\": \"dragon\",\r\n    \"1f995\": \"sauropod\",\r\n   
+    \"1f996\": \"T-Rex\",\r\n    \"1f433\": \"spouting whale\",\r\n    \"1f40b\":
+    \"whale\",\r\n    \"1f42c\": \"dolphin\",\r\n    \"1f9ad\": \"seal\",\r\n   
+    \"1f41f\": \"fish\",\r\n    \"1f420\": \"tropical fish\",\r\n    \"1f421\": \"blowfish\",\r\n   
+    \"1f988\": \"shark\",\r\n    \"1f419\": \"octopus\",\r\n    \"1f41a\": \"spiral
+    shell\",\r\n    \"1fab8\": \"coral\",\r\n    \"1fabc\": \"\u229B jellyfish\",\r\n   
+    \"1f40c\": \"snail\",\r\n    \"1f98b\": \"butterfly\",\r\n    \"1f41b\": \"bug\",\r\n   
+    \"1f41c\": \"ant\",\r\n    \"1f41d\": \"honeybee\",\r\n    \"1fab2\": \"beetle\",\r\n   
+    \"1f41e\": \"lady beetle\",\r\n    \"1f997\": \"cricket\",\r\n    \"1fab3\":
+    \"cockroach\",\r\n    \"1f577\": \"spider\",\r\n    \"1f578\": \"spider web\",\r\n   
+    \"1f982\": \"scorpion\",\r\n    \"1f99f\": \"mosquito\",\r\n    \"1fab0\": \"fly\",\r\n   
+    \"1fab1\": \"worm\",\r\n    \"1f9a0\": \"microbe\",\r\n    \"1f490\": \"bouquet\",\r\n   
+    \"1f338\": \"cherry blossom\",\r\n    \"1f4ae\": \"white flower\",\r\n    \"1fab7\":
+    \"lotus\",\r\n    \"1f3f5\": \"rosette\",\r\n    \"1f339\": \"rose\",\r\n   
+    \"1f940\": \"wilted flower\",\r\n    \"1f33a\": \"hibiscus\",\r\n    \"1f33b\":
+    \"sunflower\",\r\n    \"1f33c\": \"blossom\",\r\n    \"1f337\": \"tulip\",\r\n   
+    \"1fabb\": \"\u229B hyacinth\",\r\n    \"1f331\": \"seedling\",\r\n    \"1fab4\":
+    \"potted plant\",\r\n    \"1f332\": \"evergreen tree\",\r\n    \"1f333\": \"deciduous
+    tree\",\r\n    \"1f334\": \"palm tree\",\r\n    \"1f335\": \"cactus\",\r\n   
+    \"1f33e\": \"sheaf of rice\",\r\n    \"1f33f\": \"herb\",\r\n    \"1f340\": \"four
+    leaf clover\",\r\n    \"1f341\": \"maple leaf\",\r\n    \"1f342\": \"fallen leaf\",\r\n   
+    \"1f343\": \"leaf fluttering in wind\",\r\n    \"1fab9\": \"empty nest\",\r\n   
+    \"1faba\": \"nest with eggs\",\r\n    \"1f344\": \"mushroom\",\r\n    \"1f347\":
+    \"grapes\",\r\n    \"1f348\": \"melon\",\r\n    \"1f349\": \"watermelon\",\r\n   
+    \"1f34a\": \"tangerine\",\r\n    \"1f34b\": \"lemon\",\r\n    \"1f34c\": \"banana\",\r\n   
+    \"1f34d\": \"pineapple\",\r\n    \"1f96d\": \"mango\",\r\n    \"1f34e\": \"red
+    apple\",\r\n    \"1f34f\": \"green apple\",\r\n    \"1f350\": \"pear\",\r\n   
+    \"1f351\": \"peach\",\r\n    \"1f352\": \"cherries\",\r\n    \"1f353\": \"strawberry\",\r\n   
+    \"1fad0\": \"blueberries\",\r\n    \"1f95d\": \"kiwi fruit\",\r\n    \"1f345\":
+    \"tomato\",\r\n    \"1fad2\": \"olive\",\r\n    \"1f965\": \"coconut\",\r\n   
+    \"1f951\": \"avocado\",\r\n    \"1f346\": \"eggplant\",\r\n    \"1f954\": \"potato\",\r\n   
+    \"1f955\": \"carrot\",\r\n    \"1f33d\": \"ear of corn\",\r\n    \"1f336\": \"hot
+    pepper\",\r\n    \"1fad1\": \"bell pepper\",\r\n    \"1f952\": \"cucumber\",\r\n   
+    \"1f96c\": \"leafy green\",\r\n    \"1f966\": \"broccoli\",\r\n    \"1f9c4\":
+    \"garlic\",\r\n    \"1f9c5\": \"onion\",\r\n    \"1f95c\": \"peanuts\",\r\n   
+    \"1fad8\": \"beans\",\r\n    \"1f330\": \"chestnut\",\r\n    \"1fada\": \"\u229B
+    ginger root\",\r\n    \"1fadb\": \"\u229B pea pod\",\r\n    \"1f35e\": \"bread\",\r\n   
+    \"1f950\": \"croissant\",\r\n    \"1f956\": \"baguette bread\",\r\n    \"1fad3\":
+    \"flatbread\",\r\n    \"1f968\": \"pretzel\",\r\n    \"1f96f\": \"bagel\",\r\n   
+    \"1f95e\": \"pancakes\",\r\n    \"1f9c7\": \"waffle\",\r\n    \"1f9c0\": \"cheese
+    wedge\",\r\n    \"1f356\": \"meat on bone\",\r\n    \"1f357\": \"poultry leg\",\r\n   
+    \"1f969\": \"cut of meat\",\r\n    \"1f953\": \"bacon\",\r\n    \"1f354\": \"hamburger\",\r\n   
+    \"1f35f\": \"french fries\",\r\n    \"1f355\": \"pizza\",\r\n    \"1f32d\": \"hot
+    dog\",\r\n    \"1f96a\": \"sandwich\",\r\n    \"1f32e\": \"taco\",\r\n    \"1f32f\":
+    \"burrito\",\r\n    \"1fad4\": \"tamale\",\r\n    \"1f959\": \"stuffed flatbread\",\r\n   
+    \"1f9c6\": \"falafel\",\r\n    \"1f95a\": \"egg\",\r\n    \"1f373\": \"cooking\",\r\n   
+    \"1f958\": \"shallow pan of food\",\r\n    \"1f372\": \"pot of food\",\r\n   
+    \"1fad5\": \"fondue\",\r\n    \"1f963\": \"bowl with spoon\",\r\n    \"1f957\":
+    \"green salad\",\r\n    \"1f37f\": \"popcorn\",\r\n    \"1f9c8\": \"butter\",\r\n   
+    \"1f9c2\": \"salt\",\r\n    \"1f96b\": \"canned food\",\r\n    \"1f371\": \"bento
+    box\",\r\n    \"1f358\": \"rice cracker\",\r\n    \"1f359\": \"rice ball\",\r\n   
+    \"1f35a\": \"cooked rice\",\r\n    \"1f35b\": \"curry rice\",\r\n    \"1f35c\":
+    \"steaming bowl\",\r\n    \"1f35d\": \"spaghetti\",\r\n    \"1f360\": \"roasted
+    sweet potato\",\r\n    \"1f362\": \"oden\",\r\n    \"1f363\": \"sushi\",\r\n   
+    \"1f364\": \"fried shrimp\",\r\n    \"1f365\": \"fish cake with swirl\",\r\n   
+    \"1f96e\": \"moon cake\",\r\n    \"1f361\": \"dango\",\r\n    \"1f95f\": \"dumpling\",\r\n   
+    \"1f960\": \"fortune cookie\",\r\n    \"1f961\": \"takeout box\",\r\n    \"1f980\":
+    \"crab\",\r\n    \"1f99e\": \"lobster\",\r\n    \"1f990\": \"shrimp\",\r\n   
+    \"1f991\": \"squid\",\r\n    \"1f9aa\": \"oyster\",\r\n    \"1f366\": \"soft
+    ice cream\",\r\n    \"1f367\": \"shaved ice\",\r\n    \"1f368\": \"ice cream\",\r\n   
+    \"1f369\": \"doughnut\",\r\n    \"1f36a\": \"cookie\",\r\n    \"1f382\": \"birthday
+    cake\",\r\n    \"1f370\": \"shortcake\",\r\n    \"1f9c1\": \"cupcake\",\r\n   
+    \"1f967\": \"pie\",\r\n    \"1f36b\": \"chocolate bar\",\r\n    \"1f36c\": \"candy\",\r\n   
+    \"1f36d\": \"lollipop\",\r\n    \"1f36e\": \"custard\",\r\n    \"1f36f\": \"honey
+    pot\",\r\n    \"1f37c\": \"baby bottle\",\r\n    \"1f95b\": \"glass of milk\",\r\n   
+    \"1fad6\": \"teapot\",\r\n    \"1f375\": \"teacup without handle\",\r\n    \"1f376\":
+    \"sake\",\r\n    \"1f37e\": \"bottle with popping cork\",\r\n    \"1f377\": \"wine
+    glass\",\r\n    \"1f378\": \"cocktail glass\",\r\n    \"1f379\": \"tropical drink\",\r\n   
+    \"1f37a\": \"beer mug\",\r\n    \"1f37b\": \"clinking beer mugs\",\r\n    \"1f942\":
+    \"clinking glasses\",\r\n    \"1f943\": \"tumbler glass\",\r\n    \"1fad7\":
+    \"pouring liquid\",\r\n    \"1f964\": \"cup with straw\",\r\n    \"1f9cb\": \"bubble
+    tea\",\r\n    \"1f9c3\": \"beverage box\",\r\n    \"1f9c9\": \"mate\",\r\n   
+    \"1f9ca\": \"ice\",\r\n    \"1f962\": \"chopsticks\",\r\n    \"1f37d\": \"fork
+    and knife with plate\",\r\n    \"1f374\": \"fork and knife\",\r\n    \"1f944\":
+    \"spoon\",\r\n    \"1f52a\": \"kitchen knife\",\r\n    \"1fad9\": \"jar\",\r\n   
+    \"1f3fa\": \"amphora\",\r\n    \"1f30d\": \"globe showing Europe-Africa\",\r\n   
+    \"1f30e\": \"globe showing Americas\",\r\n    \"1f30f\": \"globe showing Asia-Australia\",\r\n   
+    \"1f310\": \"globe with meridians\",\r\n    \"1f5fa\": \"world map\",\r\n   
+    \"1f5fe\": \"map of Japan\",\r\n    \"1f9ed\": \"compass\",\r\n    \"1f3d4\":
+    \"snow-capped mountain\",\r\n    \"26f0\": \"mountain\",\r\n    \"1f30b\": \"volcano\",\r\n   
+    \"1f5fb\": \"mount fuji\",\r\n    \"1f3d5\": \"camping\",\r\n    \"1f3d6\": \"beach
+    with umbrella\",\r\n    \"1f3dc\": \"desert\",\r\n    \"1f3dd\": \"desert island\",\r\n   
+    \"1f3de\": \"national park\",\r\n    \"1f3df\": \"stadium\",\r\n    \"1f3db\":
+    \"classical building\",\r\n    \"1f3d7\": \"building construction\",\r\n    \"1f9f1\":
+    \"brick\",\r\n    \"1faa8\": \"rock\",\r\n    \"1fab5\": \"wood\",\r\n    \"1f6d6\":
+    \"hut\",\r\n    \"1f3d8\": \"houses\",\r\n    \"1f3da\": \"derelict house\",\r\n   
+    \"1f3e0\": \"house\",\r\n    \"1f3e1\": \"house with garden\",\r\n    \"1f3e2\":
+    \"office building\",\r\n    \"1f3e3\": \"Japanese post office\",\r\n    \"1f3e4\":
+    \"post office\",\r\n    \"1f3e5\": \"hospital\",\r\n    \"1f3e6\": \"bank\",\r\n   
+    \"1f3e8\": \"hotel\",\r\n    \"1f3e9\": \"love hotel\",\r\n    \"1f3ea\": \"convenience
+    store\",\r\n    \"1f3eb\": \"school\",\r\n    \"1f3ec\": \"department store\",\r\n   
+    \"1f3ed\": \"factory\",\r\n    \"1f3ef\": \"Japanese castle\",\r\n    \"1f3f0\":
+    \"castle\",\r\n    \"1f492\": \"wedding\",\r\n    \"1f5fc\": \"Tokyo tower\",\r\n   
+    \"1f5fd\": \"Statue of Liberty\",\r\n    \"26ea\": \"church\",\r\n    \"1f54c\":
+    \"mosque\",\r\n    \"1f6d5\": \"hindu temple\",\r\n    \"1f54d\": \"synagogue\",\r\n   
+    \"26e9\": \"shinto shrine\",\r\n    \"1f54b\": \"kaaba\",\r\n    \"26f2\": \"fountain\",\r\n   
+    \"26fa\": \"tent\",\r\n    \"1f301\": \"foggy\",\r\n    \"1f303\": \"night with
+    stars\",\r\n    \"1f3d9\": \"cityscape\",\r\n    \"1f304\": \"sunrise over mountains\",\r\n   
+    \"1f305\": \"sunrise\",\r\n    \"1f306\": \"cityscape at dusk\",\r\n    \"1f307\":
+    \"sunset\",\r\n    \"1f309\": \"bridge at night\",\r\n    \"1f3a0\": \"carousel
+    horse\",\r\n    \"1f6dd\": \"playground slide\",\r\n    \"1f3a1\": \"ferris wheel\",\r\n   
+    \"1f3a2\": \"roller coaster\",\r\n    \"1f488\": \"barber pole\",\r\n    \"1f3aa\":
+    \"circus tent\",\r\n    \"1f682\": \"locomotive\",\r\n    \"1f683\": \"railway
+    car\",\r\n    \"1f684\": \"high-speed train\",\r\n    \"1f685\": \"bullet train\",\r\n   
+    \"1f686\": \"train\",\r\n    \"1f687\": \"metro\",\r\n    \"1f688\": \"light
+    rail\",\r\n    \"1f689\": \"station\",\r\n    \"1f68a\": \"tram\",\r\n    \"1f69d\":
+    \"monorail\",\r\n    \"1f69e\": \"mountain railway\",\r\n    \"1f68b\": \"tram
+    car\",\r\n    \"1f68c\": \"bus\",\r\n    \"1f68d\": \"oncoming bus\",\r\n   
+    \"1f68e\": \"trolleybus\",\r\n    \"1f690\": \"minibus\",\r\n    \"1f691\": \"ambulance\",\r\n   
+    \"1f692\": \"fire engine\",\r\n    \"1f693\": \"police car\",\r\n    \"1f694\":
+    \"oncoming police car\",\r\n    \"1f695\": \"taxi\",\r\n    \"1f696\": \"oncoming
+    taxi\",\r\n    \"1f697\": \"automobile\",\r\n    \"1f698\": \"oncoming automobile\",\r\n   
+    \"1f699\": \"sport utility vehicle\",\r\n    \"1f6fb\": \"pickup truck\",\r\n   
+    \"1f69a\": \"delivery truck\",\r\n    \"1f69b\": \"articulated lorry\",\r\n   
+    \"1f69c\": \"tractor\",\r\n    \"1f3ce\": \"racing car\",\r\n    \"1f3cd\": \"motorcycle\",\r\n   
+    \"1f6f5\": \"motor scooter\",\r\n    \"1f9bd\": \"manual wheelchair\",\r\n   
+    \"1f9bc\": \"motorized wheelchair\",\r\n    \"1f6fa\": \"auto rickshaw\",\r\n   
+    \"1f6b2\": \"bicycle\",\r\n    \"1f6f4\": \"kick scooter\",\r\n    \"1f6f9\":
+    \"skateboard\",\r\n    \"1f6fc\": \"roller skate\",\r\n    \"1f68f\": \"bus stop\",\r\n   
+    \"1f6e3\": \"motorway\",\r\n    \"1f6e4\": \"railway track\",\r\n    \"1f6e2\":
+    \"oil drum\",\r\n    \"26fd\": \"fuel pump\",\r\n    \"1f6de\": \"wheel\",\r\n   
+    \"1f6a8\": \"police car light\",\r\n    \"1f6a5\": \"horizontal traffic light\",\r\n   
+    \"1f6a6\": \"vertical traffic light\",\r\n    \"1f6d1\": \"stop sign\",\r\n   
+    \"1f6a7\": \"construction\",\r\n    \"1f6df\": \"ring buoy\",\r\n    \"26f5\":
+    \"sailboat\",\r\n    \"1f6f6\": \"canoe\",\r\n    \"1f6a4\": \"speedboat\",\r\n   
+    \"1f6f3\": \"passenger ship\",\r\n    \"26f4\": \"ferry\",\r\n    \"1f6e5\":
+    \"motor boat\",\r\n    \"1f6a2\": \"ship\",\r\n    \"1f6e9\": \"small airplane\",\r\n   
+    \"1f6eb\": \"airplane departure\",\r\n    \"1f6ec\": \"airplane arrival\",\r\n   
+    \"1fa82\": \"parachute\",\r\n    \"1f4ba\": \"seat\",\r\n    \"1f681\": \"helicopter\",\r\n   
+    \"1f69f\": \"suspension railway\",\r\n    \"1f6a0\": \"mountain cableway\",\r\n   
+    \"1f6a1\": \"aerial tramway\",\r\n    \"1f6f0\": \"satellite\",\r\n    \"1f680\":
+    \"rocket\",\r\n    \"1f6f8\": \"flying saucer\",\r\n    \"1f6ce\": \"bellhop
+    bell\",\r\n    \"1f9f3\": \"luggage\",\r\n    \"231b\": \"hourglass done\",\r\n   
+    \"23f3\": \"hourglass not done\",\r\n    \"231a\": \"watch\",\r\n    \"23f0\":
+    \"alarm clock\",\r\n    \"23f1\": \"stopwatch\",\r\n    \"23f2\": \"timer clock\",\r\n   
+    \"1f570\": \"mantelpiece clock\",\r\n    \"1f55b\": \"twelve o\u2019clock\",\r\n   
+    \"1f567\": \"twelve-thirty\",\r\n    \"1f550\": \"one o\u2019clock\",\r\n   
+    \"1f55c\": \"one-thirty\",\r\n    \"1f551\": \"two o\u2019clock\",\r\n    \"1f55d\":
+    \"two-thirty\",\r\n    \"1f552\": \"three o\u2019clock\",\r\n    \"1f55e\": \"three-thirty\",\r\n   
+    \"1f553\": \"four o\u2019clock\",\r\n    \"1f55f\": \"four-thirty\",\r\n    \"1f554\":
+    \"five o\u2019clock\",\r\n    \"1f560\": \"five-thirty\",\r\n    \"1f555\": \"six
+    o\u2019clock\",\r\n    \"1f561\": \"six-thirty\",\r\n    \"1f556\": \"seven o\u2019clock\",\r\n   
+    \"1f562\": \"seven-thirty\",\r\n    \"1f557\": \"eight o\u2019clock\",\r\n   
+    \"1f563\": \"eight-thirty\",\r\n    \"1f558\": \"nine o\u2019clock\",\r\n   
+    \"1f564\": \"nine-thirty\",\r\n    \"1f559\": \"ten o\u2019clock\",\r\n    \"1f565\":
+    \"ten-thirty\",\r\n    \"1f55a\": \"eleven o\u2019clock\",\r\n    \"1f566\":
+    \"eleven-thirty\",\r\n    \"1f311\": \"new moon\",\r\n    \"1f312\": \"waxing
+    crescent moon\",\r\n    \"1f313\": \"first quarter moon\",\r\n    \"1f314\":
+    \"waxing gibbous moon\",\r\n    \"1f315\": \"full moon\",\r\n    \"1f316\": \"waning
+    gibbous moon\",\r\n    \"1f317\": \"last quarter moon\",\r\n    \"1f318\": \"waning
+    crescent moon\",\r\n    \"1f319\": \"crescent moon\",\r\n    \"1f31a\": \"new
+    moon face\",\r\n    \"1f31b\": \"first quarter moon face\",\r\n    \"1f31c\":
+    \"last quarter moon face\",\r\n    \"1f321\": \"thermometer\",\r\n    \"1f31d\":
+    \"full moon face\",\r\n    \"1f31e\": \"sun with face\",\r\n    \"1fa90\": \"ringed
+    planet\",\r\n    \"2b50\": \"star\",\r\n    \"1f31f\": \"glowing star\",\r\n   
+    \"1f320\": \"shooting star\",\r\n    \"1f30c\": \"milky way\",\r\n    \"26c5\":
+    \"sun behind cloud\",\r\n    \"26c8\": \"cloud with lightning and rain\",\r\n   
+    \"1f324\": \"sun behind small cloud\",\r\n    \"1f325\": \"sun behind large cloud\",\r\n   
+    \"1f326\": \"sun behind rain cloud\",\r\n    \"1f327\": \"cloud with rain\",\r\n   
+    \"1f328\": \"cloud with snow\",\r\n    \"1f329\": \"cloud with lightning\",\r\n   
+    \"1f32a\": \"tornado\",\r\n    \"1f32b\": \"fog\",\r\n    \"1f32c\": \"wind face\",\r\n   
+    \"1f300\": \"cyclone\",\r\n    \"1f308\": \"rainbow\",\r\n    \"1f302\": \"closed
+    umbrella\",\r\n    \"26f1\": \"umbrella on ground\",\r\n    \"26a1\": \"high
+    voltage\",\r\n    \"26c4\": \"snowman without snow\",\r\n    \"1f525\": \"fire\",\r\n   
+    \"1f4a7\": \"droplet\",\r\n    \"1f30a\": \"water wave\",\r\n    \"1f383\": \"jack-o-lantern\",\r\n   
+    \"1f384\": \"Christmas tree\",\r\n    \"1f386\": \"fireworks\",\r\n    \"1f387\":
+    \"sparkler\",\r\n    \"1f9e8\": \"firecracker\",\r\n    \"1f388\": \"balloon\",\r\n   
+    \"1f389\": \"party popper\",\r\n    \"1f38a\": \"confetti ball\",\r\n    \"1f38b\":
+    \"tanabata tree\",\r\n    \"1f38d\": \"pine decoration\",\r\n    \"1f38e\": \"Japanese
+    dolls\",\r\n    \"1f38f\": \"carp streamer\",\r\n    \"1f390\": \"wind chime\",\r\n   
+    \"1f391\": \"moon viewing ceremony\",\r\n    \"1f9e7\": \"red envelope\",\r\n   
+    \"1f380\": \"ribbon\",\r\n    \"1f381\": \"wrapped gift\",\r\n    \"1f397\":
+    \"reminder ribbon\",\r\n    \"1f39f\": \"admission tickets\",\r\n    \"1f3ab\":
+    \"ticket\",\r\n    \"1f396\": \"military medal\",\r\n    \"1f3c6\": \"trophy\",\r\n   
+    \"1f3c5\": \"sports medal\",\r\n    \"1f947\": \"1st place medal\",\r\n    \"1f948\":
+    \"2nd place medal\",\r\n    \"1f949\": \"3rd place medal\",\r\n    \"26bd\":
+    \"soccer ball\",\r\n    \"26be\": \"baseball\",\r\n    \"1f94e\": \"softball\",\r\n   
+    \"1f3c0\": \"basketball\",\r\n    \"1f3d0\": \"volleyball\",\r\n    \"1f3c8\":
+    \"american football\",\r\n    \"1f3c9\": \"rugby football\",\r\n    \"1f3be\":
+    \"tennis\",\r\n    \"1f94f\": \"flying disc\",\r\n    \"1f3b3\": \"bowling\",\r\n   
+    \"1f3cf\": \"cricket game\",\r\n    \"1f3d1\": \"field hockey\",\r\n    \"1f3d2\":
+    \"ice hockey\",\r\n    \"1f94d\": \"lacrosse\",\r\n    \"1f3d3\": \"ping pong\",\r\n   
+    \"1f3f8\": \"badminton\",\r\n    \"1f94a\": \"boxing glove\",\r\n    \"1f94b\":
+    \"martial arts uniform\",\r\n    \"1f945\": \"goal net\",\r\n    \"26f3\": \"flag
+    in hole\",\r\n    \"26f8\": \"ice skate\",\r\n    \"1f3a3\": \"fishing pole\",\r\n   
+    \"1f93f\": \"diving mask\",\r\n    \"1f3bd\": \"running shirt\",\r\n    \"1f3bf\":
+    \"skis\",\r\n    \"1f6f7\": \"sled\",\r\n    \"1f94c\": \"curling stone\",\r\n   
+    \"1f3af\": \"bullseye\",\r\n    \"1fa80\": \"yo-yo\",\r\n    \"1fa81\": \"kite\",\r\n   
+    \"1f52b\": \"water pistol\",\r\n    \"1f3b1\": \"pool 8 ball\",\r\n    \"1f52e\":
+    \"crystal ball\",\r\n    \"1fa84\": \"magic wand\",\r\n    \"1f3ae\": \"video
+    game\",\r\n    \"1f579\": \"joystick\",\r\n    \"1f3b0\": \"slot machine\",\r\n   
+    \"1f3b2\": \"game die\",\r\n    \"1f9e9\": \"puzzle piece\",\r\n    \"1f9f8\":
+    \"teddy bear\",\r\n    \"1fa85\": \"pi\xF1ata\",\r\n    \"1faa9\": \"mirror ball\",\r\n   
+    \"1fa86\": \"nesting dolls\",\r\n    \"265f\": \"chess pawn\",\r\n    \"1f0cf\":
+    \"joker\",\r\n    \"1f004\": \"mahjong red dragon\",\r\n    \"1f3b4\": \"flower
+    playing cards\",\r\n    \"1f3ad\": \"performing arts\",\r\n    \"1f5bc\": \"framed
+    picture\",\r\n    \"1f3a8\": \"artist palette\",\r\n    \"1f9f5\": \"thread\",\r\n   
+    \"1faa1\": \"sewing needle\",\r\n    \"1f9f6\": \"yarn\",\r\n    \"1faa2\": \"knot\",\r\n   
+    \"1f453\": \"glasses\",\r\n    \"1f576\": \"sunglasses\",\r\n    \"1f97d\": \"goggles\",\r\n   
+    \"1f97c\": \"lab coat\",\r\n    \"1f9ba\": \"safety vest\",\r\n    \"1f454\":
+    \"necktie\",\r\n    \"1f455\": \"t-shirt\",\r\n    \"1f456\": \"jeans\",\r\n   
+    \"1f9e3\": \"scarf\",\r\n    \"1f9e4\": \"gloves\",\r\n    \"1f9e5\": \"coat\",\r\n   
+    \"1f9e6\": \"socks\",\r\n    \"1f457\": \"dress\",\r\n    \"1f458\": \"kimono\",\r\n   
+    \"1f97b\": \"sari\",\r\n    \"1fa71\": \"one-piece swimsuit\",\r\n    \"1fa72\":
+    \"briefs\",\r\n    \"1fa73\": \"shorts\",\r\n    \"1f459\": \"bikini\",\r\n   
+    \"1f45a\": \"woman\u2019s clothes\",\r\n    \"1faad\": \"\u229B folding hand
+    fan\",\r\n    \"1f45b\": \"purse\",\r\n    \"1f45c\": \"handbag\",\r\n    \"1f45d\":
+    \"clutch bag\",\r\n    \"1f6cd\": \"shopping bags\",\r\n    \"1f392\": \"backpack\",\r\n   
+    \"1fa74\": \"thong sandal\",\r\n    \"1f45e\": \"man\u2019s shoe\",\r\n    \"1f45f\":
+    \"running shoe\",\r\n    \"1f97e\": \"hiking boot\",\r\n    \"1f97f\": \"flat
+    shoe\",\r\n    \"1f460\": \"high-heeled shoe\",\r\n    \"1f461\": \"woman\u2019s
+    sandal\",\r\n    \"1fa70\": \"ballet shoes\",\r\n    \"1f462\": \"woman\u2019s
+    boot\",\r\n    \"1faae\": \"\u229B hair pick\",\r\n    \"1f451\": \"crown\",\r\n   
+    \"1f452\": \"woman\u2019s hat\",\r\n    \"1f3a9\": \"top hat\",\r\n    \"1f393\":
+    \"graduation cap\",\r\n    \"1f9e2\": \"billed cap\",\r\n    \"1fa96\": \"military
+    helmet\",\r\n    \"26d1\": \"rescue worker\u2019s helmet\",\r\n    \"1f4ff\":
+    \"prayer beads\",\r\n    \"1f484\": \"lipstick\",\r\n    \"1f48d\": \"ring\",\r\n   
+    \"1f48e\": \"gem stone\",\r\n    \"1f507\": \"muted speaker\",\r\n    \"1f508\":
+    \"speaker low volume\",\r\n    \"1f509\": \"speaker medium volume\",\r\n    \"1f50a\":
+    \"speaker high volume\",\r\n    \"1f4e2\": \"loudspeaker\",\r\n    \"1f4e3\":
+    \"megaphone\",\r\n    \"1f4ef\": \"postal horn\",\r\n    \"1f514\": \"bell\",\r\n   
+    \"1f515\": \"bell with slash\",\r\n    \"1f3bc\": \"musical score\",\r\n    \"1f3b5\":
+    \"musical note\",\r\n    \"1f3b6\": \"musical notes\",\r\n    \"1f399\": \"studio
+    microphone\",\r\n    \"1f39a\": \"level slider\",\r\n    \"1f39b\": \"control
+    knobs\",\r\n    \"1f3a4\": \"microphone\",\r\n    \"1f3a7\": \"headphone\",\r\n   
+    \"1f4fb\": \"radio\",\r\n    \"1f3b7\": \"saxophone\",\r\n    \"1fa97\": \"accordion\",\r\n   
+    \"1f3b8\": \"guitar\",\r\n    \"1f3b9\": \"musical keyboard\",\r\n    \"1f3ba\":
+    \"trumpet\",\r\n    \"1f3bb\": \"violin\",\r\n    \"1fa95\": \"banjo\",\r\n   
+    \"1f941\": \"drum\",\r\n    \"1fa98\": \"long drum\",\r\n    \"1fa87\": \"\u229B
+    maracas\",\r\n    \"1fa88\": \"\u229B flute\",\r\n    \"1f4f1\": \"mobile phone\",\r\n   
+    \"1f4f2\": \"mobile phone with arrow\",\r\n    \"260e\": \"telephone\",\r\n   
+    \"1f4de\": \"telephone receiver\",\r\n    \"1f4df\": \"pager\",\r\n    \"1f4e0\":
+    \"fax machine\",\r\n    \"1f50b\": \"battery\",\r\n    \"1faab\": \"low battery\",\r\n   
+    \"1f50c\": \"electric plug\",\r\n    \"1f4bb\": \"laptop\",\r\n    \"1f5a5\":
+    \"desktop computer\",\r\n    \"1f5a8\": \"printer\",\r\n    \"1f5b1\": \"computer
+    mouse\",\r\n    \"1f5b2\": \"trackball\",\r\n    \"1f4bd\": \"computer disk\",\r\n   
+    \"1f4be\": \"floppy disk\",\r\n    \"1f4bf\": \"optical disk\",\r\n    \"1f4c0\":
+    \"dvd\",\r\n    \"1f9ee\": \"abacus\",\r\n    \"1f3a5\": \"movie camera\",\r\n   
+    \"1f39e\": \"film frames\",\r\n    \"1f4fd\": \"film projector\",\r\n    \"1f3ac\":
+    \"clapper board\",\r\n    \"1f4fa\": \"television\",\r\n    \"1f4f7\": \"camera\",\r\n   
+    \"1f4f8\": \"camera with flash\",\r\n    \"1f4f9\": \"video camera\",\r\n   
+    \"1f4fc\": \"videocassette\",\r\n    \"1f50d\": \"magnifying glass tilted left\",\r\n   
+    \"1f50e\": \"magnifying glass tilted right\",\r\n    \"1f56f\": \"candle\",\r\n   
+    \"1f4a1\": \"light bulb\",\r\n    \"1f526\": \"flashlight\",\r\n    \"1f3ee\":
+    \"red paper lantern\",\r\n    \"1fa94\": \"diya lamp\",\r\n    \"1f4d4\": \"notebook
+    with decorative cover\",\r\n    \"1f4d5\": \"closed book\",\r\n    \"1f4d6\":
+    \"open book\",\r\n    \"1f4d7\": \"green book\",\r\n    \"1f4d8\": \"blue book\",\r\n   
+    \"1f4d9\": \"orange book\",\r\n    \"1f4da\": \"books\",\r\n    \"1f4d3\": \"notebook\",\r\n   
+    \"1f4d2\": \"ledger\",\r\n    \"1f4c3\": \"page with curl\",\r\n    \"1f4dc\":
+    \"scroll\",\r\n    \"1f4c4\": \"page facing up\",\r\n    \"1f4f0\": \"newspaper\",\r\n   
+    \"1f5de\": \"rolled-up newspaper\",\r\n    \"1f4d1\": \"bookmark tabs\",\r\n   
+    \"1f516\": \"bookmark\",\r\n    \"1f3f7\": \"label\",\r\n    \"1f4b0\": \"money
+    bag\",\r\n    \"1fa99\": \"coin\",\r\n    \"1f4b4\": \"yen banknote\",\r\n   
+    \"1f4b5\": \"dollar banknote\",\r\n    \"1f4b6\": \"euro banknote\",\r\n    \"1f4b7\":
+    \"pound banknote\",\r\n    \"1f4b8\": \"money with wings\",\r\n    \"1f4b3\":
+    \"credit card\",\r\n    \"1f9fe\": \"receipt\",\r\n    \"1f4b9\": \"chart increasing
+    with yen\",\r\n    \"1f4e7\": \"e-mail\",\r\n    \"1f4e8\": \"incoming envelope\",\r\n   
+    \"1f4e9\": \"envelope with arrow\",\r\n    \"1f4e4\": \"outbox tray\",\r\n   
+    \"1f4e5\": \"inbox tray\",\r\n    \"1f4e6\": \"package\",\r\n    \"1f4eb\": \"closed
+    mailbox with raised flag\",\r\n    \"1f4ea\": \"closed mailbox with lowered flag\",\r\n   
+    \"1f4ec\": \"open mailbox with raised flag\",\r\n    \"1f4ed\": \"open mailbox
+    with lowered flag\",\r\n    \"1f4ee\": \"postbox\",\r\n    \"1f5f3\": \"ballot
+    box with ballot\",\r\n    \"270f\": \"pencil\",\r\n    \"1f58b\": \"fountain
+    pen\",\r\n    \"1f58a\": \"pen\",\r\n    \"1f58c\": \"paintbrush\",\r\n    \"1f58d\":
+    \"crayon\",\r\n    \"1f4dd\": \"memo\",\r\n    \"1f4bc\": \"briefcase\",\r\n   
+    \"1f4c1\": \"file folder\",\r\n    \"1f4c2\": \"open file folder\",\r\n    \"1f5c2\":
+    \"card index dividers\",\r\n    \"1f4c5\": \"calendar\",\r\n    \"1f4c6\": \"tear-off
+    calendar\",\r\n    \"1f5d2\": \"spiral notepad\",\r\n    \"1f5d3\": \"spiral
+    calendar\",\r\n    \"1f4c7\": \"card index\",\r\n    \"1f4c8\": \"chart increasing\",\r\n   
+    \"1f4c9\": \"chart decreasing\",\r\n    \"1f4ca\": \"bar chart\",\r\n    \"1f4cb\":
+    \"clipboard\",\r\n    \"1f4cc\": \"pushpin\",\r\n    \"1f4cd\": \"round pushpin\",\r\n   
+    \"1f4ce\": \"paperclip\",\r\n    \"1f587\": \"linked paperclips\",\r\n    \"1f4cf\":
+    \"straight ruler\",\r\n    \"1f4d0\": \"triangular ruler\",\r\n    \"1f5c3\":
+    \"card file box\",\r\n    \"1f5c4\": \"file cabinet\",\r\n    \"1f5d1\": \"wastebasket\",\r\n   
+    \"1f512\": \"locked\",\r\n    \"1f513\": \"unlocked\",\r\n    \"1f50f\": \"locked
+    with pen\",\r\n    \"1f510\": \"locked with key\",\r\n    \"1f511\": \"key\",\r\n   
+    \"1f5dd\": \"old key\",\r\n    \"1f528\": \"hammer\",\r\n    \"1fa93\": \"axe\",\r\n   
+    \"26cf\": \"pick\",\r\n    \"1f6e0\": \"hammer and wrench\",\r\n    \"1f5e1\":
+    \"dagger\",\r\n    \"1f4a3\": \"bomb\",\r\n    \"1fa83\": \"boomerang\",\r\n   
+    \"1f3f9\": \"bow and arrow\",\r\n    \"1f6e1\": \"shield\",\r\n    \"1fa9a\":
+    \"carpentry saw\",\r\n    \"1f527\": \"wrench\",\r\n    \"1fa9b\": \"screwdriver\",\r\n   
+    \"1f529\": \"nut and bolt\",\r\n    \"1f5dc\": \"clamp\",\r\n    \"1f9af\": \"white
+    cane\",\r\n    \"1f517\": \"link\",\r\n    \"26d3\": \"chains\",\r\n    \"1fa9d\":
+    \"hook\",\r\n    \"1f9f0\": \"toolbox\",\r\n    \"1f9f2\": \"magnet\",\r\n   
+    \"1fa9c\": \"ladder\",\r\n    \"1f9ea\": \"test tube\",\r\n    \"1f9eb\": \"petri
+    dish\",\r\n    \"1f9ec\": \"dna\",\r\n    \"1f52c\": \"microscope\",\r\n    \"1f52d\":
+    \"telescope\",\r\n    \"1f4e1\": \"satellite antenna\",\r\n    \"1f489\": \"syringe\",\r\n   
+    \"1fa78\": \"drop of blood\",\r\n    \"1f48a\": \"pill\",\r\n    \"1fa79\": \"adhesive
+    bandage\",\r\n    \"1fa7c\": \"crutch\",\r\n    \"1fa7a\": \"stethoscope\",\r\n   
+    \"1fa7b\": \"x-ray\",\r\n    \"1f6aa\": \"door\",\r\n    \"1f6d7\": \"elevator\",\r\n   
+    \"1fa9e\": \"mirror\",\r\n    \"1fa9f\": \"window\",\r\n    \"1f6cf\": \"bed\",\r\n   
+    \"1f6cb\": \"couch and lamp\",\r\n    \"1fa91\": \"chair\",\r\n    \"1f6bd\":
+    \"toilet\",\r\n    \"1faa0\": \"plunger\",\r\n    \"1f6bf\": \"shower\",\r\n   
+    \"1f6c1\": \"bathtub\",\r\n    \"1faa4\": \"mouse trap\",\r\n    \"1fa92\": \"razor\",\r\n   
+    \"1f9f4\": \"lotion bottle\",\r\n    \"1f9f7\": \"safety pin\",\r\n    \"1f9f9\":
+    \"broom\",\r\n    \"1f9fa\": \"basket\",\r\n    \"1f9fb\": \"roll of paper\",\r\n   
+    \"1faa3\": \"bucket\",\r\n    \"1f9fc\": \"soap\",\r\n    \"1fae7\": \"bubbles\",\r\n   
+    \"1faa5\": \"toothbrush\",\r\n    \"1f9fd\": \"sponge\",\r\n    \"1f9ef\": \"fire
+    extinguisher\",\r\n    \"1f6d2\": \"shopping cart\",\r\n    \"1f6ac\": \"cigarette\",\r\n   
+    \"26b0\": \"coffin\",\r\n    \"1faa6\": \"headstone\",\r\n    \"26b1\": \"funeral
+    urn\",\r\n    \"1f9ff\": \"nazar amulet\",\r\n    \"1faac\": \"hamsa\",\r\n   
+    \"1f5ff\": \"moai\",\r\n    \"1faa7\": \"placard\",\r\n    \"1faaa\": \"identification
+    card\",\r\n    \"1f3e7\": \"ATM sign\",\r\n    \"1f6ae\": \"litter in bin sign\",\r\n   
+    \"1f6b0\": \"potable water\",\r\n    \"267f\": \"wheelchair symbol\",\r\n   
+    \"1f6b9\": \"men\u2019s room\",\r\n    \"1f6ba\": \"women\u2019s room\",\r\n   
+    \"1f6bb\": \"restroom\",\r\n    \"1f6bc\": \"baby symbol\",\r\n    \"1f6be\":
+    \"water closet\",\r\n    \"1f6c2\": \"passport control\",\r\n    \"1f6c3\": \"customs\",\r\n   
+    \"1f6c4\": \"baggage claim\",\r\n    \"1f6c5\": \"left luggage\",\r\n    \"26a0\":
+    \"warning\",\r\n    \"1f6b8\": \"children crossing\",\r\n    \"26d4\": \"no entry\",\r\n   
+    \"1f6ab\": \"prohibited\",\r\n    \"1f6b3\": \"no bicycles\",\r\n    \"1f6ad\":
+    \"no smoking\",\r\n    \"1f6af\": \"no littering\",\r\n    \"1f6b1\": \"non-potable
+    water\",\r\n    \"1f6b7\": \"no pedestrians\",\r\n    \"1f4f5\": \"no mobile
+    phones\",\r\n    \"1f51e\": \"no one under eighteen\",\r\n    \"2b06\": \"up
+    arrow\",\r\n    \"27a1\": \"right arrow\",\r\n    \"2b07\": \"down arrow\",\r\n   
+    \"2b05\": \"left arrow\",\r\n    \"21a9\": \"right arrow curving left\",\r\n   
+    \"21aa\": \"left arrow curving right\",\r\n    \"1f503\": \"clockwise vertical
+    arrows\",\r\n    \"1f504\": \"counterclockwise arrows button\",\r\n    \"1f519\":
+    \"BACK arrow\",\r\n    \"1f51a\": \"END arrow\",\r\n    \"1f51b\": \"ON! arrow\",\r\n   
+    \"1f51c\": \"SOON arrow\",\r\n    \"1f51d\": \"TOP arrow\",\r\n    \"1f6d0\":
+    \"place of worship\",\r\n    \"269b\": \"atom symbol\",\r\n    \"1f549\": \"om\",\r\n   
+    \"262f\": \"yin yang\",\r\n    \"271d\": \"latin cross\",\r\n    \"262a\": \"star
+    and crescent\",\r\n    \"262e\": \"peace symbol\",\r\n    \"1f54e\": \"menorah\",\r\n   
+    \"1f52f\": \"dotted six-pointed star\",\r\n    \"1faaf\": \"\u229B khanda\",\r\n   
+    \"264a\": \"Gemini\",\r\n    \"264b\": \"Cancer\",\r\n    \"264c\": \"Leo\",\r\n   
+    \"264d\": \"Virgo\",\r\n    \"264e\": \"Libra\",\r\n    \"264f\": \"Scorpio\",\r\n   
+    \"26ce\": \"Ophiuchus\",\r\n    \"1f500\": \"shuffle tracks button\",\r\n   
+    \"1f501\": \"repeat button\",\r\n    \"1f502\": \"repeat single button\",\r\n   
+    \"25b6\": \"play button\",\r\n    \"23e9\": \"fast-forward button\",\r\n    \"23ed\":
+    \"next track button\",\r\n    \"23ef\": \"play or pause button\",\r\n    \"25c0\":
+    \"reverse button\",\r\n    \"23ea\": \"fast reverse button\",\r\n    \"23ee\":
+    \"last track button\",\r\n    \"1f53c\": \"upwards button\",\r\n    \"23eb\":
+    \"fast up button\",\r\n    \"1f53d\": \"downwards button\",\r\n    \"23ec\":
+    \"fast down button\",\r\n    \"23f8\": \"pause button\",\r\n    \"23f9\": \"stop
+    button\",\r\n    \"23fa\": \"record button\",\r\n    \"23cf\": \"eject button\",\r\n   
+    \"1f3a6\": \"cinema\",\r\n    \"1f505\": \"dim button\",\r\n    \"1f506\": \"bright
+    button\",\r\n    \"1f4f6\": \"antenna bars\",\r\n    \"1f6dc\": \"\u229B wireless\",\r\n   
+    \"1f4f3\": \"vibration mode\",\r\n    \"1f4f4\": \"mobile phone off\",\r\n   
+    \"26a7\": \"transgender symbol\",\r\n    \"1f7f0\": \"heavy equals sign\",\r\n   
+    \"267e\": \"infinity\",\r\n    \"203c\": \"double exclamation mark\",\r\n   
+    \"1f4b1\": \"currency exchange\",\r\n    \"1f4b2\": \"heavy dollar sign\",\r\n   
+    \"267b\": \"recycling symbol\",\r\n    \"269c\": \"fleur-de-lis\",\r\n    \"1f531\":
+    \"trident emblem\",\r\n    \"1f4db\": \"name badge\",\r\n    \"1f530\": \"Japanese
+    symbol for beginner\",\r\n    \"2b55\": \"hollow red circle\",\r\n    \"274c\":
+    \"cross mark\",\r\n    \"274e\": \"cross mark button\",\r\n    \"27b0\": \"curly
+    loop\",\r\n    \"27bf\": \"double curly loop\",\r\n    \"303d\": \"part alternation
+    mark\",\r\n    \"00a9\": \"copyright\",\r\n    \"00ae\": \"registered\",\r\n   
+    \"0023_fe0f_20e3\": \"keycap: #\",\r\n    \"002a_fe0f_20e3\": \"keycap: *\",\r\n   
+    \"0030_fe0f_20e3\": \"keycap: 0\",\r\n    \"0031_fe0f_20e3\": \"keycap: 1\",\r\n   
+    \"0032_fe0f_20e3\": \"keycap: 2\",\r\n    \"0033_fe0f_20e3\": \"keycap: 3\",\r\n   
+    \"0034_fe0f_20e3\": \"keycap: 4\",\r\n    \"0035_fe0f_20e3\": \"keycap: 5\",\r\n   
+    \"0036_fe0f_20e3\": \"keycap: 6\",\r\n    \"0037_fe0f_20e3\": \"keycap: 7\",\r\n   
+    \"0038_fe0f_20e3\": \"keycap: 8\",\r\n    \"0039_fe0f_20e3\": \"keycap: 9\",\r\n   
+    \"1f51f\": \"keycap: 10\",\r\n    \"1f520\": \"input latin uppercase\",\r\n   
+    \"1f521\": \"input latin lowercase\",\r\n    \"1f522\": \"input numbers\",\r\n   
+    \"1f523\": \"input symbols\",\r\n    \"1f524\": \"input latin letters\",\r\n   
+    \"1f170\": \"A button (blood type)\",\r\n    \"1f18e\": \"AB button (blood type)\",\r\n   
+    \"1f171\": \"B button (blood type)\",\r\n    \"1f191\": \"CL button\",\r\n   
+    \"1f192\": \"COOL button\",\r\n    \"1f193\": \"FREE button\",\r\n    \"1f194\":
+    \"ID button\",\r\n    \"24c2\": \"circled M\",\r\n    \"1f195\": \"NEW button\",\r\n   
+    \"1f196\": \"NG button\",\r\n    \"1f17e\": \"O button (blood type)\",\r\n   
+    \"1f197\": \"OK button\",\r\n    \"1f17f\": \"P button\",\r\n    \"1f198\": \"SOS
+    button\",\r\n    \"1f199\": \"UP! button\",\r\n    \"1f19a\": \"VS button\",\r\n   
+    \"1f201\": \"Japanese \u201Chere\u201D button\",\r\n    \"1f202\": \"Japanese
+    \u201Cservice charge\u201D button\",\r\n    \"1f237\": \"Japanese \u201Cmonthly
+    amount\u201D button\",\r\n    \"1f236\": \"Japanese \u201Cnot free of charge\u201D
+    button\",\r\n    \"1f22f\": \"Japanese \u201Creserved\u201D button\",\r\n   
+    \"1f250\": \"Japanese \u201Cbargain\u201D button\",\r\n    \"1f239\": \"Japanese
+    \u201Cdiscount\u201D button\",\r\n    \"1f21a\": \"Japanese \u201Cfree of charge\u201D
+    button\",\r\n    \"1f232\": \"Japanese \u201Cprohibited\u201D button\",\r\n   
+    \"1f251\": \"Japanese \u201Cacceptable\u201D button\",\r\n    \"1f238\": \"Japanese
+    \u201Capplication\u201D button\",\r\n    \"1f234\": \"Japanese \u201Cpassing
+    grade\u201D button\",\r\n    \"1f233\": \"Japanese \u201Cvacancy\u201D button\",\r\n   
+    \"1f23a\": \"Japanese \u201Copen for business\u201D button\",\r\n    \"1f235\":
+    \"Japanese \u201Cno vacancy\u201D button\",\r\n    \"1f534\": \"red circle\",\r\n   
+    \"1f7e0\": \"orange circle\",\r\n    \"1f7e1\": \"yellow circle\",\r\n    \"1f7e2\":
+    \"green circle\",\r\n    \"1f535\": \"blue circle\",\r\n    \"1f7e3\": \"purple
+    circle\",\r\n    \"1f7e4\": \"brown circle\",\r\n    \"26ab\": \"black circle\",\r\n   
+    \"26aa\": \"white circle\",\r\n    \"1f7e5\": \"red square\",\r\n    \"1f7e7\":
+    \"orange square\",\r\n    \"1f7e8\": \"yellow square\",\r\n    \"1f7e9\": \"green
+    square\",\r\n    \"1f7e6\": \"blue square\",\r\n    \"1f7ea\": \"purple square\",\r\n   
+    \"1f7eb\": \"brown square\",\r\n    \"2b1b\": \"black large square\",\r\n   
+    \"2b1c\": \"white large square\",\r\n    \"25fc\": \"black medium square\",\r\n   
+    \"25fb\": \"white medium square\",\r\n    \"25fe\": \"black medium-small square\",\r\n   
+    \"25fd\": \"white medium-small square\",\r\n    \"25aa\": \"black small square\",\r\n   
+    \"25ab\": \"white small square\",\r\n    \"1f536\": \"large orange diamond\",\r\n   
+    \"1f537\": \"large blue diamond\",\r\n    \"1f538\": \"small orange diamond\",\r\n   
+    \"1f539\": \"small blue diamond\",\r\n    \"1f53a\": \"red triangle pointed up\",\r\n   
+    \"1f53b\": \"red triangle pointed down\",\r\n    \"1f4a0\": \"diamond with a
+    dot\",\r\n    \"1f518\": \"radio button\",\r\n    \"1f533\": \"white square button\",\r\n   
+    \"1f532\": \"black square button\",\r\n    \"1f3c1\": \"chequered flag\",\r\n   
+    \"1f6a9\": \"triangular flag\",\r\n    \"1f38c\": \"crossed flags\",\r\n    \"1f3f4\":
+    \"black flag\",\r\n    \"1f3f3\": \"white flag\",\r\n    \"1f3f3_fe0f_200d_1f308\":
+    \"rainbow flag\",\r\n    \"1f3f3_fe0f_200d_26a7_fe0f\": \"transgender flag\",\r\n   
+    \"1f3f4_200d_2620_fe0f\": \"pirate flag\",\r\n    \"1f1e6_1f1e8\": \"flag: Ascension
+    Island\",\r\n    \"1f1e6_1f1e9\": \"flag: Andorra\",\r\n    \"1f1e6_1f1ea\":
+    \"flag: United Arab Emirates\",\r\n    \"1f1e6_1f1eb\": \"flag: Afghanistan\",\r\n   
+    \"1f1e6_1f1ec\": \"flag: Antigua & Barbuda\",\r\n    \"1f1e6_1f1ee\": \"flag:
+    Anguilla\",\r\n    \"1f1e6_1f1f1\": \"flag: Albania\",\r\n    \"1f1e6_1f1f2\":
+    \"flag: Armenia\",\r\n    \"1f1e6_1f1f4\": \"flag: Angola\",\r\n    \"1f1e6_1f1f6\":
+    \"flag: Antarctica\",\r\n    \"1f1e6_1f1f7\": \"flag: Argentina\",\r\n    \"1f1e6_1f1f8\":
+    \"flag: American Samoa\",\r\n    \"1f1e6_1f1f9\": \"flag: Austria\",\r\n    \"1f1e6_1f1fa\":
+    \"flag: Australia\",\r\n    \"1f1e6_1f1fc\": \"flag: Aruba\",\r\n    \"1f1e6_1f1fd\":
+    \"flag: \xC5land Islands\",\r\n    \"1f1e6_1f1ff\": \"flag: Azerbaijan\",\r\n   
+    \"1f1e7_1f1e6\": \"flag: Bosnia & Herzegovina\",\r\n    \"1f1e7_1f1e7\": \"flag:
+    Barbados\",\r\n    \"1f1e7_1f1e9\": \"flag: Bangladesh\",\r\n    \"1f1e7_1f1ea\":
+    \"flag: Belgium\",\r\n    \"1f1e7_1f1eb\": \"flag: Burkina Faso\",\r\n    \"1f1e7_1f1ec\":
+    \"flag: Bulgaria\",\r\n    \"1f1e7_1f1ed\": \"flag: Bahrain\",\r\n    \"1f1e7_1f1ee\":
+    \"flag: Burundi\",\r\n    \"1f1e7_1f1ef\": \"flag: Benin\",\r\n    \"1f1e7_1f1f1\":
+    \"flag: St. Barth\xE9lemy\",\r\n    \"1f1e7_1f1f2\": \"flag: Bermuda\",\r\n   
+    \"1f1e7_1f1f3\": \"flag: Brunei\",\r\n    \"1f1e7_1f1f4\": \"flag: Bolivia\",\r\n   
+    \"1f1e7_1f1f6\": \"flag: Caribbean Netherlands\",\r\n    \"1f1e7_1f1f7\": \"flag:
+    Brazil\",\r\n    \"1f1e7_1f1f8\": \"flag: Bahamas\",\r\n    \"1f1e7_1f1f9\":
+    \"flag: Bhutan\",\r\n    \"1f1e7_1f1fb\": \"flag: Bouvet Island\",\r\n    \"1f1e7_1f1fc\":
+    \"flag: Botswana\",\r\n    \"1f1e7_1f1fe\": \"flag: Belarus\",\r\n    \"1f1e7_1f1ff\":
+    \"flag: Belize\",\r\n    \"1f1e8_1f1e6\": \"flag: Canada\",\r\n    \"1f1e8_1f1e8\":
+    \"flag: Cocos (Keeling) Islands\",\r\n    \"1f1e8_1f1e9\": \"flag: Congo - Kinshasa\",\r\n   
+    \"1f1e8_1f1eb\": \"flag: Central African Republic\",\r\n    \"1f1e8_1f1ec\":
+    \"flag: Congo - Brazzaville\",\r\n    \"1f1e8_1f1ed\": \"flag: Switzerland\",\r\n   
+    \"1f1e8_1f1ee\": \"flag: C\xF4te d\u2019Ivoire\",\r\n    \"1f1e8_1f1f0\": \"flag:
+    Cook Islands\",\r\n    \"1f1e8_1f1f1\": \"flag: Chile\",\r\n    \"1f1e8_1f1f2\":
+    \"flag: Cameroon\",\r\n    \"1f1e8_1f1f3\": \"flag: China\",\r\n    \"1f1e8_1f1f4\":
+    \"flag: Colombia\",\r\n    \"1f1e8_1f1f5\": \"flag: Clipperton Island\",\r\n   
+    \"1f1e8_1f1f7\": \"flag: Costa Rica\",\r\n    \"1f1e8_1f1fa\": \"flag: Cuba\",\r\n   
+    \"1f1e8_1f1fb\": \"flag: Cape Verde\",\r\n    \"1f1e8_1f1fc\": \"flag: Cura\xE7ao\",\r\n   
+    \"1f1e8_1f1fd\": \"flag: Christmas Island\",\r\n    \"1f1e8_1f1fe\": \"flag:
+    Cyprus\",\r\n    \"1f1e8_1f1ff\": \"flag: Czechia\",\r\n    \"1f1e9_1f1ea\":
+    \"flag: Germany\",\r\n    \"1f1e9_1f1ec\": \"flag: Diego Garcia\",\r\n    \"1f1e9_1f1ef\":
+    \"flag: Djibouti\",\r\n    \"1f1e9_1f1f0\": \"flag: Denmark\",\r\n    \"1f1e9_1f1f2\":
+    \"flag: Dominica\",\r\n    \"1f1e9_1f1f4\": \"flag: Dominican Republic\",\r\n   
+    \"1f1e9_1f1ff\": \"flag: Algeria\",\r\n    \"1f1ea_1f1e6\": \"flag: Ceuta & Melilla\",\r\n   
+    \"1f1ea_1f1e8\": \"flag: Ecuador\",\r\n    \"1f1ea_1f1ea\": \"flag: Estonia\",\r\n   
+    \"1f1ea_1f1ec\": \"flag: Egypt\",\r\n    \"1f1ea_1f1ed\": \"flag: Western Sahara\",\r\n   
+    \"1f1ea_1f1f7\": \"flag: Eritrea\",\r\n    \"1f1ea_1f1f8\": \"flag: Spain\",\r\n   
+    \"1f1ea_1f1f9\": \"flag: Ethiopia\",\r\n    \"1f1ea_1f1fa\": \"flag: European
+    Union\",\r\n    \"1f1eb_1f1ee\": \"flag: Finland\",\r\n    \"1f1eb_1f1ef\": \"flag:
+    Fiji\",\r\n    \"1f1eb_1f1f0\": \"flag: Falkland Islands\",\r\n    \"1f1eb_1f1f2\":
+    \"flag: Micronesia\",\r\n    \"1f1eb_1f1f4\": \"flag: Faroe Islands\",\r\n   
+    \"1f1eb_1f1f7\": \"flag: France\",\r\n    \"1f1ec_1f1e6\": \"flag: Gabon\",\r\n   
+    \"1f1ec_1f1e7\": \"flag: United Kingdom\",\r\n    \"1f1ec_1f1e9\": \"flag: Grenada\",\r\n   
+    \"1f1ec_1f1ea\": \"flag: Georgia\",\r\n    \"1f1ec_1f1eb\": \"flag: French Guiana\",\r\n   
+    \"1f1ec_1f1ec\": \"flag: Guernsey\",\r\n    \"1f1ec_1f1ed\": \"flag: Ghana\",\r\n   
+    \"1f1ec_1f1ee\": \"flag: Gibraltar\",\r\n    \"1f1ec_1f1f1\": \"flag: Greenland\",\r\n   
+    \"1f1ec_1f1f2\": \"flag: Gambia\",\r\n    \"1f1ec_1f1f3\": \"flag: Guinea\",\r\n   
+    \"1f1ec_1f1f5\": \"flag: Guadeloupe\",\r\n    \"1f1ec_1f1f6\": \"flag: Equatorial
+    Guinea\",\r\n    \"1f1ec_1f1f7\": \"flag: Greece\",\r\n    \"1f1ec_1f1f8\": \"flag:
+    South Georgia & South Sandwich Islands\",\r\n    \"1f1ec_1f1f9\": \"flag: Guatemala\",\r\n   
+    \"1f1ec_1f1fa\": \"flag: Guam\",\r\n    \"1f1ec_1f1fc\": \"flag: Guinea-Bissau\",\r\n   
+    \"1f1ec_1f1fe\": \"flag: Guyana\",\r\n    \"1f1ed_1f1f0\": \"flag: Hong Kong
+    SAR China\",\r\n    \"1f1ed_1f1f2\": \"flag: Heard & McDonald Islands\",\r\n   
+    \"1f1ed_1f1f3\": \"flag: Honduras\",\r\n    \"1f1ed_1f1f7\": \"flag: Croatia\",\r\n   
+    \"1f1ed_1f1f9\": \"flag: Haiti\",\r\n    \"1f1ed_1f1fa\": \"flag: Hungary\",\r\n   
+    \"1f1ee_1f1e8\": \"flag: Canary Islands\",\r\n    \"1f1ee_1f1e9\": \"flag: Indonesia\",\r\n   
+    \"1f1ee_1f1ea\": \"flag: Ireland\",\r\n    \"1f1ee_1f1f1\": \"flag: Israel\",\r\n   
+    \"1f1ee_1f1f2\": \"flag: Isle of Man\",\r\n    \"1f1ee_1f1f3\": \"flag: India\",\r\n   
+    \"1f1ee_1f1f4\": \"flag: British Indian Ocean Territory\",\r\n    \"1f1ee_1f1f6\":
+    \"flag: Iraq\",\r\n    \"1f1ee_1f1f7\": \"flag: Iran\",\r\n    \"1f1ee_1f1f8\":
+    \"flag: Iceland\",\r\n    \"1f1ee_1f1f9\": \"flag: Italy\",\r\n    \"1f1ef_1f1ea\":
+    \"flag: Jersey\",\r\n    \"1f1ef_1f1f2\": \"flag: Jamaica\",\r\n    \"1f1ef_1f1f4\":
+    \"flag: Jordan\",\r\n    \"1f1ef_1f1f5\": \"flag: Japan\",\r\n    \"1f1f0_1f1ea\":
+    \"flag: Kenya\",\r\n    \"1f1f0_1f1ec\": \"flag: Kyrgyzstan\",\r\n    \"1f1f0_1f1ed\":
+    \"flag: Cambodia\",\r\n    \"1f1f0_1f1ee\": \"flag: Kiribati\",\r\n    \"1f1f0_1f1f2\":
+    \"flag: Comoros\",\r\n    \"1f1f0_1f1f3\": \"flag: St. Kitts & Nevis\",\r\n   
+    \"1f1f0_1f1f5\": \"flag: North Korea\",\r\n    \"1f1f0_1f1f7\": \"flag: South
+    Korea\",\r\n    \"1f1f0_1f1fc\": \"flag: Kuwait\",\r\n    \"1f1f0_1f1fe\": \"flag:
+    Cayman Islands\",\r\n    \"1f1f0_1f1ff\": \"flag: Kazakhstan\",\r\n    \"1f1f1_1f1e6\":
+    \"flag: Laos\",\r\n    \"1f1f1_1f1e7\": \"flag: Lebanon\",\r\n    \"1f1f1_1f1e8\":
+    \"flag: St. Lucia\",\r\n    \"1f1f1_1f1ee\": \"flag: Liechtenstein\",\r\n   
+    \"1f1f1_1f1f0\": \"flag: Sri Lanka\",\r\n    \"1f1f1_1f1f7\": \"flag: Liberia\",\r\n   
+    \"1f1f1_1f1f8\": \"flag: Lesotho\",\r\n    \"1f1f1_1f1f9\": \"flag: Lithuania\",\r\n   
+    \"1f1f1_1f1fa\": \"flag: Luxembourg\",\r\n    \"1f1f1_1f1fb\": \"flag: Latvia\",\r\n   
+    \"1f1f1_1f1fe\": \"flag: Libya\",\r\n    \"1f1f2_1f1e6\": \"flag: Morocco\",\r\n   
+    \"1f1f2_1f1e8\": \"flag: Monaco\",\r\n    \"1f1f2_1f1e9\": \"flag: Moldova\",\r\n   
+    \"1f1f2_1f1ea\": \"flag: Montenegro\",\r\n    \"1f1f2_1f1eb\": \"flag: St. Martin\",\r\n   
+    \"1f1f2_1f1ec\": \"flag: Madagascar\",\r\n    \"1f1f2_1f1ed\": \"flag: Marshall
+    Islands\",\r\n    \"1f1f2_1f1f0\": \"flag: North Macedonia\",\r\n    \"1f1f2_1f1f1\":
+    \"flag: Mali\",\r\n    \"1f1f2_1f1f2\": \"flag: Myanmar (Burma)\",\r\n    \"1f1f2_1f1f3\":
+    \"flag: Mongolia\",\r\n    \"1f1f2_1f1f4\": \"flag: Macao SAR China\",\r\n   
+    \"1f1f2_1f1f5\": \"flag: Northern Mariana Islands\",\r\n    \"1f1f2_1f1f6\":
+    \"flag: Martinique\",\r\n    \"1f1f2_1f1f7\": \"flag: Mauritania\",\r\n    \"1f1f2_1f1f8\":
+    \"flag: Montserrat\",\r\n    \"1f1f2_1f1f9\": \"flag: Malta\",\r\n    \"1f1f2_1f1fa\":
+    \"flag: Mauritius\",\r\n    \"1f1f2_1f1fb\": \"flag: Maldives\",\r\n    \"1f1f2_1f1fc\":
+    \"flag: Malawi\",\r\n    \"1f1f2_1f1fd\": \"flag: Mexico\",\r\n    \"1f1f2_1f1fe\":
+    \"flag: Malaysia\",\r\n    \"1f1f2_1f1ff\": \"flag: Mozambique\",\r\n    \"1f1f3_1f1e6\":
+    \"flag: Namibia\",\r\n    \"1f1f3_1f1e8\": \"flag: New Caledonia\",\r\n    \"1f1f3_1f1ea\":
+    \"flag: Niger\",\r\n    \"1f1f3_1f1eb\": \"flag: Norfolk Island\",\r\n    \"1f1f3_1f1ec\":
+    \"flag: Nigeria\",\r\n    \"1f1f3_1f1ee\": \"flag: Nicaragua\",\r\n    \"1f1f3_1f1f1\":
+    \"flag: Netherlands\",\r\n    \"1f1f3_1f1f4\": \"flag: Norway\",\r\n    \"1f1f3_1f1f5\":
+    \"flag: Nepal\",\r\n    \"1f1f3_1f1f7\": \"flag: Nauru\",\r\n    \"1f1f3_1f1fa\":
+    \"flag: Niue\",\r\n    \"1f1f3_1f1ff\": \"flag: New Zealand\",\r\n    \"1f1f4_1f1f2\":
+    \"flag: Oman\",\r\n    \"1f1f5_1f1e6\": \"flag: Panama\",\r\n    \"1f1f5_1f1ea\":
+    \"flag: Peru\",\r\n    \"1f1f5_1f1eb\": \"flag: French Polynesia\",\r\n    \"1f1f5_1f1ec\":
+    \"flag: Papua New Guinea\",\r\n    \"1f1f5_1f1ed\": \"flag: Philippines\",\r\n   
+    \"1f1f5_1f1f0\": \"flag: Pakistan\",\r\n    \"1f1f5_1f1f1\": \"flag: Poland\",\r\n   
+    \"1f1f5_1f1f2\": \"flag: St. Pierre & Miquelon\",\r\n    \"1f1f5_1f1f3\": \"flag:
+    Pitcairn Islands\",\r\n    \"1f1f5_1f1f7\": \"flag: Puerto Rico\",\r\n    \"1f1f5_1f1f8\":
+    \"flag: Palestinian Territories\",\r\n    \"1f1f5_1f1f9\": \"flag: Portugal\",\r\n   
+    \"1f1f5_1f1fc\": \"flag: Palau\",\r\n    \"1f1f5_1f1fe\": \"flag: Paraguay\",\r\n   
+    \"1f1f6_1f1e6\": \"flag: Qatar\",\r\n    \"1f1f7_1f1ea\": \"flag: R\xE9union\",\r\n   
+    \"1f1f7_1f1f4\": \"flag: Romania\",\r\n    \"1f1f7_1f1f8\": \"flag: Serbia\",\r\n   
+    \"1f1f7_1f1fa\": \"flag: Russia\",\r\n    \"1f1f7_1f1fc\": \"flag: Rwanda\",\r\n   
+    \"1f1f8_1f1e6\": \"flag: Saudi Arabia\",\r\n    \"1f1f8_1f1e7\": \"flag: Solomon
+    Islands\",\r\n    \"1f1f8_1f1e8\": \"flag: Seychelles\",\r\n    \"1f1f8_1f1e9\":
+    \"flag: Sudan\",\r\n    \"1f1f8_1f1ea\": \"flag: Sweden\",\r\n    \"1f1f8_1f1ec\":
+    \"flag: Singapore\",\r\n    \"1f1f8_1f1ed\": \"flag: St. Helena\",\r\n    \"1f1f8_1f1ee\":
+    \"flag: Slovenia\",\r\n    \"1f1f8_1f1ef\": \"flag: Svalbard & Jan Mayen\",\r\n   
+    \"1f1f8_1f1f0\": \"flag: Slovakia\",\r\n    \"1f1f8_1f1f1\": \"flag: Sierra Leone\",\r\n   
+    \"1f1f8_1f1f2\": \"flag: San Marino\",\r\n    \"1f1f8_1f1f3\": \"flag: Senegal\",\r\n   
+    \"1f1f8_1f1f4\": \"flag: Somalia\",\r\n    \"1f1f8_1f1f7\": \"flag: Suriname\",\r\n   
+    \"1f1f8_1f1f8\": \"flag: South Sudan\",\r\n    \"1f1f8_1f1f9\": \"flag: S\xE3o
+    Tom\xE9 & Pr\xEDncipe\",\r\n    \"1f1f8_1f1fb\": \"flag: El Salvador\",\r\n   
+    \"1f1f8_1f1fd\": \"flag: Sint Maarten\",\r\n    \"1f1f8_1f1fe\": \"flag: Syria\",\r\n   
+    \"1f1f8_1f1ff\": \"flag: Eswatini\",\r\n    \"1f1f9_1f1e6\": \"flag: Tristan
+    da Cunha\",\r\n    \"1f1f9_1f1e8\": \"flag: Turks & Caicos Islands\",\r\n   
+    \"1f1f9_1f1e9\": \"flag: Chad\",\r\n    \"1f1f9_1f1eb\": \"flag: French Southern
+    Territories\",\r\n    \"1f1f9_1f1ec\": \"flag: Togo\",\r\n    \"1f1f9_1f1ed\":
+    \"flag: Thailand\",\r\n    \"1f1f9_1f1ef\": \"flag: Tajikistan\",\r\n    \"1f1f9_1f1f0\":
+    \"flag: Tokelau\",\r\n    \"1f1f9_1f1f1\": \"flag: Timor-Leste\",\r\n    \"1f1f9_1f1f2\":
+    \"flag: Turkmenistan\",\r\n    \"1f1f9_1f1f3\": \"flag: Tunisia\",\r\n    \"1f1f9_1f1f4\":
+    \"flag: Tonga\",\r\n    \"1f1f9_1f1f7\": \"flag: Turkey\",\r\n    \"1f1f9_1f1f9\":
+    \"flag: Trinidad & Tobago\",\r\n    \"1f1f9_1f1fb\": \"flag: Tuvalu\",\r\n   
+    \"1f1f9_1f1fc\": \"flag: Taiwan\",\r\n    \"1f1f9_1f1ff\": \"flag: Tanzania\",\r\n   
+    \"1f1fa_1f1e6\": \"flag: Ukraine\",\r\n    \"1f1fa_1f1ec\": \"flag: Uganda\",\r\n   
+    \"1f1fa_1f1f2\": \"flag: U.S. Outlying Islands\",\r\n    \"1f1fa_1f1f3\": \"flag:
+    United Nations\",\r\n    \"1f1fa_1f1f8\": \"flag: United States\",\r\n    \"1f1fa_1f1fe\":
+    \"flag: Uruguay\",\r\n    \"1f1fa_1f1ff\": \"flag: Uzbekistan\",\r\n    \"1f1fb_1f1e6\":
+    \"flag: Vatican City\",\r\n    \"1f1fb_1f1e8\": \"flag: St. Vincent & Grenadines\",\r\n   
+    \"1f1fb_1f1ea\": \"flag: Venezuela\",\r\n    \"1f1fb_1f1ec\": \"flag: British
+    Virgin Islands\",\r\n    \"1f1fb_1f1ee\": \"flag: U.S. Virgin Islands\",\r\n   
+    \"1f1fb_1f1f3\": \"flag: Vietnam\",\r\n    \"1f1fb_1f1fa\": \"flag: Vanuatu\",\r\n   
+    \"1f1fc_1f1eb\": \"flag: Wallis & Futuna\",\r\n    \"1f1fc_1f1f8\": \"flag: Samoa\",\r\n   
+    \"1f1fd_1f1f0\": \"flag: Kosovo\",\r\n    \"1f1fe_1f1ea\": \"flag: Yemen\",\r\n   
+    \"1f1fe_1f1f9\": \"flag: Mayotte\",\r\n    \"1f1ff_1f1e6\": \"flag: South Africa\",\r\n   
+    \"1f1ff_1f1f2\": \"flag: Zambia\",\r\n    \"1f1ff_1f1fc\": \"flag: Zimbabwe\",\r\n   
+    \"1f3f4_e0067_e0062_e0065_e006e_e0067_e007f\": \"flag: England\",\r\n    \"1f3f4_e0067_e0062_e0073_e0063_e0074_e007f\":
+    \"flag: Scotland\",\r\n    \"1f3f4_e0067_e0062_e0077_e006c_e0073_e007f\": \"flag:
+    Wales\"\r\n}"
+  folderOfEmojis: {fileID: 102900000, guid: 7bcced63831ac2e469aff738e06f11cc, type: 3}

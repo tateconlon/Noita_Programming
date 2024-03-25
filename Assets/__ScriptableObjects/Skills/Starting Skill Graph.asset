@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3381964851919688344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Brain (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -584, y: -72}
+  ports:
+    keys:
+    - _children
+    - _parent
+    values:
+    - _fieldName: _children
+      _node: {fileID: -3381964851919688344}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: 4350060570772352418}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _parent
+      _node: {fileID: -3381964851919688344}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: b9a52104e0ea6874e837f156b45e3cc3, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 0
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac6e1222c3e57f44ac122ac4b0bc1f3, type: 3}
+  m_Name: Starting Skill Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 4350060570772352418}
+  - {fileID: 2447515625609584391}
+  - {fileID: -3381964851919688344}
+  - {fileID: 5277240854649636712}
+--- !u!114 &2447515625609584391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Pistol Shot)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 8, y: -88}
+  ports:
+    keys:
+    - _children
+    - _parent
+    values:
+    - _fieldName: _children
+      _node: {fileID: 2447515625609584391}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: 5277240854649636712}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _parent
+      _node: {fileID: 2447515625609584391}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: 4350060570772352418}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ee6ae05c3a8817e47ba6795a36a5efbc, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &4350060570772352418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Master Wand - Summons right side Minion on your command)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -296, y: -72}
+  ports:
+    keys:
+    - _children
+    - _parent
+    values:
+    - _fieldName: _children
+      _node: {fileID: 4350060570772352418}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: 2447515625609584391}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _parent
+      _node: {fileID: 4350060570772352418}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: -3381964851919688344}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: baf53038d91b48f44b63dfd7e797ea17, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 0
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &5277240854649636712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Empty
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 328, y: -72}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 5277240854649636712}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: 2447515625609584391}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 5277240854649636712}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 0}
+  maxNumChildren: 0
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}

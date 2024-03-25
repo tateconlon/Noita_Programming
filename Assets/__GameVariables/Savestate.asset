@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c8ff01ae061634bb050e76b8230d90, type: 3}
+  m_Name: Savestate
+  m_EditorClassIdentifier: 
+  entries:
+  - key: NumRunsLifetime
+    value: {fileID: 11400000, guid: 963ccf90f785b094e94643bb0cf5e6ef, type: 2}
+  - key: TotalGameTimeLifetime
+    value: {fileID: 11400000, guid: 5bb301861da4fb846b899da9c9b26c1b, type: 2}
+  - key: TotalApplicationTimeLifetime
+    value: {fileID: 11400000, guid: 949a3d88f34b16b4ea8006705aa94d51, type: 2}

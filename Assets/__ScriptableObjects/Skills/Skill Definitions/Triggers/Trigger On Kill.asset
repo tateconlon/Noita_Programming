@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3b4d7df7504784ba78c0e4b6dbdbf3, type: 3}
+  m_Name: Trigger On Kill
+  m_EditorClassIdentifier: 
+  displayName: Lethal Wand - Summon right side Minion when left side Minion Kills
+  description: 
+  icon: {fileID: 21300000, guid: e19314ed9087fdd41afd84dff5e8ebc3, type: 3}
+  category: {fileID: 11400000, guid: d9a979f75c7508b47aabc12bb1615957, type: 2}
+  canRollInShop: 1
+  tier: 1
+  ignoreReceiver: 1
+  actorPrefab: {fileID: 0}
+  abilityTriggerPrefab: {fileID: 8825969293468309546, guid: a09c52acd9d863748afe3022ee3574cb, type: 3}
+  spawnActorAbility: {fileID: 0}

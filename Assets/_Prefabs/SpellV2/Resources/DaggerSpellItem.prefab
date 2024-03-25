@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1814536176380519047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2844423965845229713}
+  - component: {fileID: 546048467081093709}
+  - component: {fileID: 495697247024348248}
+  m_Layer: 16
+  m_Name: DaggerSpellItem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2844423965845229713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814536176380519047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &546048467081093709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814536176380519047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f1dadab88408495b686e32a11d8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statsMod: {fileID: 495697247024348248}
+  uiInfo:
+    name: Dagger
+    icon: {fileID: 625428276, guid: 3ef19979c7f1e5148b88789282c510a2, type: 3}
+    tier: 1
+  nextWeaponBuffs: []
+  projPrefab: {fileID: 8606233828543211425, guid: bdcc0bbbc3f925e4fa19408dc0169fa7, type: 3}
+  b_damage: 2
+  b_numOfProjectiles: 1
+  b_size: 1
+  b_spread: 10
+  b_knockback: 1
+  b_projectileSpeed: 10
+  b_bounce: 0
+  b_piercing: 0
+  b_inaccuracy: 10
+  b_lifetime: 0.45
+  level: 1
+--- !u!114 &495697247024348248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814536176380519047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b37693f40924c29aa4143e2d6590f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

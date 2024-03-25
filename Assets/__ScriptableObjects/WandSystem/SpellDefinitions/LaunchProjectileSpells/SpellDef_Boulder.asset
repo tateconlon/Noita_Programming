@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73da7ddf6f754ee5a2a07121b62b7569, type: 3}
+  m_Name: SpellDef_Boulder
+  m_EditorClassIdentifier: 
+  displayName: Roll Boulder
+  icon: {fileID: -86230892, guid: e985fed573120e541abf7577a73c9760, type: 3}
+  description: Crush enemies
+  attackDescTooltip: Crush enemies
+  launcherPrefab: {fileID: 6309093358112206954, guid: 0d4b0923889a301408b2ac8ad24f215b, type: 3}
+  projectilePrefab: {fileID: 619204372810560687, guid: d9b7fbe645f15b5439589a810f39ead2, type: 3}
+  projectilesIgnorePrevTarget: 0

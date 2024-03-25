@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d450da9317945588a076e4439df3257, type: 3}
+  m_Name: Poison
+  m_EditorClassIdentifier: 
+  displayName: Poison
+  icon: {fileID: 0}
+  effect:
+    modifiers: []
+    successChance: 1
+    tagInfo:
+      grantedTags:
+      - {fileID: 11400000, guid: 4a18c8a637cb14849a63e79e7d87d750, type: 2}
+      removeEffectsWithTags: []
+      applicationTags:
+        requiredTags:
+        - {fileID: 11400000, guid: c3a992f5f7bf8a6409f227f6bab2cbc3, type: 2}
+        - {fileID: 11400000, guid: b58635b74f0373c42980b8983c5ea583, type: 2}
+        - {fileID: 11400000, guid: 11793a691960559428adda8d89d38592, type: 2}
+        blockedTags: []
+      cancellationTags:
+        requiredTags: []
+        blockedTags: []
+    periodicEffects:
+      effects:
+      - modifiers:
+        - rid: 6682577970395086860
+        successChance: 1
+        tagInfo:
+          grantedTags: []
+          removeEffectsWithTags: []
+          applicationTags:
+            requiredTags: []
+            blockedTags: []
+          cancellationTags:
+            requiredTags: []
+            blockedTags: []
+      period: 1
+      waitOnePeriod: 0
+    stackingInfo:
+      stackingMode: 1
+      maxNumStacks: 25
+      maxStackedDuration: 30
+  references:
+    version: 2
+    RefIds:
+    - rid: 6682577970395086860
+      type: {class: AttributeAdd, ns: , asm: Assembly-CSharp}
+      data:
+        targetAttribute: {fileID: 11400000, guid: 347b0be6b39653c4084908cc95697ece, type: 2}
+        _valueToAdd: -0.2

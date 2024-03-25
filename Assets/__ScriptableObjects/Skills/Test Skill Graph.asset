@@ -1,0 +1,425 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7824733332240420663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Empty
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 966.2659, y: -0.82818216}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -7824733332240420663}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: -1972714280699114635}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -7824733332240420663}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 0}
+  _tier: {fileID: 0}
+  maxNumChildren: 0
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+  multiplier: 1
+  frequency: 1
+--- !u!114 &-7371050094140345127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Brain (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -552, y: -88}
+  ports:
+    keys:
+    - _children
+    - _parent
+    values:
+    - _fieldName: _children
+      _node: {fileID: -7371050094140345127}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: -6611964802431711593}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _parent
+      _node: {fileID: -7371050094140345127}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: b9a52104e0ea6874e837f156b45e3cc3, type: 2}
+  _tier: {fileID: 11400000, guid: c32a78f353ac0194695ef3898ce1f075, type: 2}
+  maxNumChildren: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+  damage: 1
+  quantity: 1
+  duration: 1
+  speed: 1
+--- !u!114 &-6611964802431711593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Spine Medium (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -280, y: -88}
+  ports:
+    keys:
+    - _children
+    - _parent
+    values:
+    - _fieldName: _children
+      _node: {fileID: -6611964802431711593}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: 3606128019672506105}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _parent
+      _node: {fileID: -6611964802431711593}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: -7371050094140345127}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: 9288018ee2ddbc64eae529514e0fcfd9, type: 2}
+  _tier: {fileID: 11400000, guid: c32a78f353ac0194695ef3898ce1f075, type: 2}
+  maxNumChildren: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+  multiplier: 1
+  frequency: 1
+--- !u!114 &-4273446293125934199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Nerve On Hit (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 392, y: -104}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -4273446293125934199}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: 3606128019672506105}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -4273446293125934199}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: -1972714280699114635}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ef19be89654b8074cb832d15ef77b8bf, type: 2}
+  _tier: {fileID: 11400000, guid: c32a78f353ac0194695ef3898ce1f075, type: 2}
+  maxNumChildren: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+  multiplier: 1
+  frequency: 1
+--- !u!114 &-1972714280699114635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Fire Ring (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 648, y: -120}
+  ports:
+    keys:
+    - _children
+    - _parent
+    values:
+    - _fieldName: _children
+      _node: {fileID: -1972714280699114635}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: -7824733332240420663}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _parent
+      _node: {fileID: -1972714280699114635}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: -4273446293125934199}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ea0c3919ef1673e49bed30c03f789503, type: 2}
+  _tier: {fileID: 11400000, guid: c32a78f353ac0194695ef3898ce1f075, type: 2}
+  maxNumChildren: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+  damage: 1
+  quantity: 1
+  duration: 1
+  speed: 1
+--- !u!114 &-972514349679289913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Nerve On Hit (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 377.60028, y: 399.19092}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -972514349679289913}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: 3606128019672506105}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -972514349679289913}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: 1203222927682405106}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ef19be89654b8074cb832d15ef77b8bf, type: 2}
+  _tier: {fileID: 11400000, guid: c32a78f353ac0194695ef3898ce1f075, type: 2}
+  maxNumChildren: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+  multiplier: 1
+  frequency: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac6e1222c3e57f44ac122ac4b0bc1f3, type: 3}
+  m_Name: Test Skill Graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -6611964802431711593}
+  - {fileID: 3606128019672506105}
+  - {fileID: -7371050094140345127}
+  - {fileID: -972514349679289913}
+  - {fileID: 1203222927682405106}
+  - {fileID: -7824733332240420663}
+  - {fileID: -1972714280699114635}
+  - {fileID: -4273446293125934199}
+--- !u!114 &1203222927682405106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Empty
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 758.8043, y: 505.5566}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 1203222927682405106}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: -972514349679289913}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 1203222927682405106}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 0}
+  _tier: {fileID: 0}
+  maxNumChildren: 0
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+  damage: 1
+  quantity: 1
+  duration: 1
+  speed: 1
+--- !u!114 &3606128019672506105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Basic Projectile (Rare)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 40, y: -72}
+  ports:
+    keys:
+    - _children
+    - _parent
+    values:
+    - _fieldName: _children
+      _node: {fileID: 3606128019672506105}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _parent
+        node: {fileID: -972514349679289913}
+        reroutePoints: []
+      - fieldName: _parent
+        node: {fileID: -4273446293125934199}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _parent
+      _node: {fileID: 3606128019672506105}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: _children
+        node: {fileID: -6611964802431711593}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ee6ae05c3a8817e47ba6795a36a5efbc, type: 2}
+  _tier: {fileID: 11400000, guid: d504fb373c72c794fa21d60ec1714a97, type: 2}
+  maxNumChildren: 2
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+  damage: 1
+  quantity: 1
+  duration: 1
+  speed: 1

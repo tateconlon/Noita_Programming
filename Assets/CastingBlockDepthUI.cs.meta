@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: bd1f87ae290524d13b14e203f4600ebd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - castingBlockUIPrefab: {fileID: 4100234044081925633, guid: dafe7d2a4abb54f88a264bb93003f2e6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

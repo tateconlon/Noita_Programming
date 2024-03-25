@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8475006925502436036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8475006925502436039}
+  - component: {fileID: 8475006925502436038}
+  m_Layer: 0
+  m_Name: Gold Per Level Adder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8475006925502436039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8475006925502436036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8475006925502436038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8475006925502436036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4738db9b6c9c5c642a72b7a1af408e06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerLevel:
+    globalVariable: {fileID: 11400000, guid: 63bd3d95f412c9c408db64334d74bc4e, type: 2}
+    localValue: 0
+    useLocal: 0
+  _playerGold:
+    globalVariable: {fileID: 11400000, guid: 2721e7c359dbdea45b116c92b4f07345, type: 2}
+    localValue: 0
+    useLocal: 0
+  _levelToGold:
+    _keyData: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000140000001500000016000000170000001800000019000000
+    _valueData:
+    - {x: 3, y: 3}
+    - {x: 3, y: 3}
+    - {x: 5, y: 6}
+    - {x: 4, y: 5}
+    - {x: 5, y: 8}
+    - {x: 8, y: 10}
+    - {x: 8, y: 10}
+    - {x: 12, y: 14}
+    - {x: 14, y: 18}
+    - {x: 10, y: 13}
+    - {x: 12, y: 15}
+    - {x: 13, y: 14}
+    - {x: 14, y: 14}
+    - {x: 12, y: 16}
+    - {x: 14, y: 18}
+    - {x: 12, y: 12}
+    - {x: 12, y: 12}
+    - {x: 20, y: 24}
+    - {x: 8, y: 12}
+    - {x: 10, y: 14}
+    - {x: 20, y: 28}
+    - {x: 32, y: 32}
+    - {x: 36, y: 36}
+    - {x: 48, y: 48}
+    - {x: 100, y: 100}

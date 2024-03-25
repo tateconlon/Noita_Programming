@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73da7ddf6f754ee5a2a07121b62b7569, type: 3}
+  m_Name: SpellDef_Sniper
+  m_EditorClassIdentifier: 
+  displayName: Fire Longbow
+  icon: {fileID: -966156432, guid: 69557dab4ce90374bad4fa91eafdec10, type: 3}
+  description: An arrow
+  attackDescTooltip: An arrow
+  launcherPrefab: {fileID: 589263060961358795, guid: 85f0bdfe36b50824590b82386577dfea, type: 3}
+  projectilePrefab: {fileID: 5122485396201766633, guid: 1d8b06682534b464685a9d2be4b7358d, type: 3}
+  projectilesIgnorePrevTarget: 1

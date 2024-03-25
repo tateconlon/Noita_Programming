@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 265b316d58f7fb744abf8c9f82efe163, type: 3}
+  m_Name: Skill Shop Trigger
+  m_EditorClassIdentifier: 
+  nodes: []
+  _shopCurrency:
+    globalVariable: {fileID: 11400000, guid: 2721e7c359dbdea45b116c92b4f07345, type: 2}
+    localValue: 0
+    useLocal: 0

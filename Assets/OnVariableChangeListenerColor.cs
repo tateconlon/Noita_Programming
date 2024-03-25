@@ -1,0 +1,1 @@
+public class OnVariableChangeListenerColor : OnVariableChangeListenerBase<UnityEngine.Color> { }

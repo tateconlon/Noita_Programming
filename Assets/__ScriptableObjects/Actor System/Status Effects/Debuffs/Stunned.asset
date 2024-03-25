@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d450da9317945588a076e4439df3257, type: 3}
+  m_Name: Stunned
+  m_EditorClassIdentifier: 
+  displayName: Stunned
+  icon: {fileID: 0}
+  effect:
+    modifiers:
+    - rid: 5105040612187701248
+    successChance: 1
+    tagInfo:
+      grantedTags: []
+      removeEffectsWithTags: []
+      applicationTags:
+        requiredTags: []
+        blockedTags: []
+      cancellationTags:
+        requiredTags: []
+        blockedTags: []
+    periodicEffects:
+      effects: []
+      period: 1
+      waitOnePeriod: 0
+    stackingInfo:
+      stackingMode: 0
+      maxNumStacks: 25
+      maxStackedDuration: 30
+  references:
+    version: 2
+    RefIds:
+    - rid: 5105040612187701248
+      type: {class: AttributeSet, ns: , asm: Assembly-CSharp}
+      data:
+        targetAttribute: {fileID: 11400000, guid: 7587b1bdfd7e6784c8799778b4b5d425, type: 2}
+        _newValue: 0

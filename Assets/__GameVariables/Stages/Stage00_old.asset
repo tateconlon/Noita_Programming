@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96d7952941b2b6f40b82d2350163f8d0, type: 3}
+  m_Name: Stage00_old
+  m_EditorClassIdentifier: 
+  maxNumEnemies: 200
+  waves:
+  - duration: 15
+    minEnemies: 6
+    spawnInterval: 2
+    enemies:
+    - enemyPrefab: {fileID: 6721034192743957856, guid: 999820dbe1fc79a4384b73bc699f724c, type: 3}
+      quantity: 2
+      weight: 100
+    bosses: []
+    events: []
+  - duration: 20
+    minEnemies: 20
+    spawnInterval: 0.5
+    enemies:
+    - enemyPrefab: {fileID: 6721034192743957856, guid: fff60078836d1a2458e51acf450b57ac, type: 3}
+      quantity: 4
+      weight: 100
+    - enemyPrefab: {fileID: 3087764619464666869, guid: 61614c6108d773f4c97c5ee1e922cfa0, type: 3}
+      quantity: 1
+      weight: 25
+    bosses: []
+    events: []
+  - duration: 25
+    minEnemies: 30
+    spawnInterval: 0.5
+    enemies:
+    - enemyPrefab: {fileID: 6721034192743957856, guid: 999820dbe1fc79a4384b73bc699f724c, type: 3}
+      quantity: 4
+      weight: 100
+    - enemyPrefab: {fileID: 8678390419464349709, guid: 337ff50e66691fb4d801859ded67cdf1, type: 3}
+      quantity: 1
+      weight: 25
+    bosses: []
+    events: []
+  - duration: 30
+    minEnemies: 30
+    spawnInterval: 1
+    enemies:
+    - enemyPrefab: {fileID: 6721034192743957856, guid: 999820dbe1fc79a4384b73bc699f724c, type: 3}
+      quantity: 2
+      weight: 100
+    - enemyPrefab: {fileID: 5558737029370429087, guid: 96b346807deab094fac5f760a564e1d0, type: 3}
+      quantity: 1
+      weight: 15
+    bosses: []
+    events: []
+  - duration: 35
+    minEnemies: 30
+    spawnInterval: 1
+    enemies:
+    - enemyPrefab: {fileID: 8678390419464349709, guid: 337ff50e66691fb4d801859ded67cdf1, type: 3}
+      quantity: 2
+      weight: 100
+    - enemyPrefab: {fileID: 6721034192743957856, guid: 4d05a9ed22610b1448f832484862c308, type: 3}
+      quantity: 3
+      weight: 50
+    bosses: []
+    events: []
+  - duration: 40
+    minEnemies: 55
+    spawnInterval: 0.5
+    enemies:
+    - enemyPrefab: {fileID: 6721034192743957856, guid: fff60078836d1a2458e51acf450b57ac, type: 3}
+      quantity: 3
+      weight: 100
+    - enemyPrefab: {fileID: 8678390419464349709, guid: 337ff50e66691fb4d801859ded67cdf1, type: 3}
+      quantity: 1
+      weight: 5
+    - enemyPrefab: {fileID: 5558737029370429087, guid: 96b346807deab094fac5f760a564e1d0, type: 3}
+      quantity: 1
+      weight: 5
+    bosses: []
+    events: []
+  - duration: 45
+    minEnemies: 60
+    spawnInterval: 0.75
+    enemies:
+    - enemyPrefab: {fileID: 6721034192743957856, guid: 999820dbe1fc79a4384b73bc699f724c, type: 3}
+      quantity: 2
+      weight: 100
+    - enemyPrefab: {fileID: 6721034192743957856, guid: 4d05a9ed22610b1448f832484862c308, type: 3}
+      quantity: 1
+      weight: 15
+    - enemyPrefab: {fileID: 6721034192743957856, guid: abda755270cdb0349b4883f0a51fb017, type: 3}
+      quantity: 1
+      weight: 15
+    bosses: []
+    events: []
+  - duration: 50
+    minEnemies: 50
+    spawnInterval: 1
+    enemies:
+    - enemyPrefab: {fileID: 8678390419464349709, guid: 337ff50e66691fb4d801859ded67cdf1, type: 3}
+      quantity: 1
+      weight: 100
+    - enemyPrefab: {fileID: 6721034192743957856, guid: 4d05a9ed22610b1448f832484862c308, type: 3}
+      quantity: 1
+      weight: 25
+    - enemyPrefab: {fileID: 3087764619464666869, guid: 61614c6108d773f4c97c5ee1e922cfa0, type: 3}
+      quantity: 1
+      weight: 10
+    bosses: []
+    events: []
+  - duration: 60
+    minEnemies: 60
+    spawnInterval: 1
+    enemies:
+    - enemyPrefab: {fileID: 6721034192743957856, guid: abda755270cdb0349b4883f0a51fb017, type: 3}
+      quantity: 1
+      weight: 100
+    - enemyPrefab: {fileID: 8678390419464349709, guid: 337ff50e66691fb4d801859ded67cdf1, type: 3}
+      quantity: 3
+      weight: 100
+    - enemyPrefab: {fileID: 5558737029370429087, guid: 96b346807deab094fac5f760a564e1d0, type: 3}
+      quantity: 1
+      weight: 20
+    bosses: []
+    events: []

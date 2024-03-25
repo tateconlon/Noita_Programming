@@ -1,0 +1,18 @@
+{
+    "name": "SodaExtensions",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a7bec831267a935418ea3486a9cd51d9",
+        "GUID:c7a1cd68b46f2f742bfee49ce8478f50",
+        "GUID:195b533e40633614287d1ecc7253d996"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

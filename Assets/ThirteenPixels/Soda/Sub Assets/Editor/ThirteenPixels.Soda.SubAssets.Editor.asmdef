@@ -1,0 +1,17 @@
+{
+    "name": "ThirteenPixels.Soda.SubAssets.Editor",
+    "references": [
+        "GUID:289c631aa5893ce449b75b2428ea9c57"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

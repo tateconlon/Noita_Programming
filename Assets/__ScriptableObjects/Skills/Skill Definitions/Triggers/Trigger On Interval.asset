@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3b4d7df7504784ba78c0e4b6dbdbf3, type: 3}
+  m_Name: Trigger On Interval
+  m_EditorClassIdentifier: 
+  displayName: Time Wand - Summons right side Minion when the left side Minion is
+    alive for 2 seconds
+  description: 
+  icon: {fileID: 21300000, guid: d09d9734c50af9b4581975fc1bbc2329, type: 3}
+  category: {fileID: 11400000, guid: 46b71a3608f91c244bb646e014a2cad6, type: 2}
+  canRollInShop: 1
+  tier: 1
+  ignoreReceiver: 1
+  actorPrefab: {fileID: 0}
+  abilityTriggerPrefab: {fileID: 3042504372025563013, guid: 897d192da7c07044fbd73ccd733280ad, type: 3}
+  spawnActorAbility: {fileID: 0}

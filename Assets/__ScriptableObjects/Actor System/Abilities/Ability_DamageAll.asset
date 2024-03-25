@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87362245f10146a2a6ad8188e79dee54, type: 3}
+  m_Name: Ability_DamageAll
+  m_EditorClassIdentifier: 
+  value:
+    ownerInstantEffects: []
+    ownerDurationEffects:
+      _keyData: []
+      _valueData: []
+    ownerGlobalDurationEffects:
+      _keyData: []
+      _valueData: []
+    targetInstantEffects:
+    - modifiers:
+      - rid: 2148610915725213703
+      successChance: 1
+      tagInfo:
+        grantedTags: []
+        removeEffectsWithTags: []
+        applicationTags:
+          requiredTags: []
+          blockedTags: []
+        cancellationTags:
+          requiredTags: []
+          blockedTags: []
+    targetDurationEffects:
+      _keyData: []
+      _valueData: []
+    targetGlobalDurationEffects:
+      _keyData: []
+      _valueData: []
+    activationOwnerTags:
+      requiredTags: []
+      blockedTags: []
+    activationTargetTags:
+      requiredTags:
+      - {fileID: 11400000, guid: b58635b74f0373c42980b8983c5ea583, type: 2}
+      blockedTags: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2148610915725213703
+      type: {class: AttributeAddOther, ns: , asm: Assembly-CSharp}
+      data:
+        targetAttribute: {fileID: 11400000, guid: 347b0be6b39653c4084908cc95697ece, type: 2}
+        _otherAttribute: {fileID: 11400000, guid: 8c7b6d356bc07e1489b3dc4988e9f48d, type: 2}
+        _multiplier: -1

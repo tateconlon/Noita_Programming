@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d53b60c8ffa8d41f3a5690e9e3efc85f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - icon: {instanceID: 0}
+  - iconRoot: {instanceID: 0}
+  - holdingFlag: {fileID: 11400000, guid: 708979007d29d489681517d3d7bc0db8, type: 2}
+  - pointerOverUIFlag: {fileID: 11400000, guid: 6527935208daa984a862458cd04b26d0, type: 2}
+  - spellPickupPrefab: {fileID: 3822182225590442378, guid: f1243094d19cd4862a1be0cee4a48b6e, type: 3}
+  - playerPosition: {fileID: 11400000, guid: 4d63f49317950954f92e9416b1adc4bf, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

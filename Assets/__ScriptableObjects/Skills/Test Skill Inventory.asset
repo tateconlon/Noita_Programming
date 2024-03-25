@@ -1,0 +1,789 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9184218314038204467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Roll Boulder)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 600, y: 1992}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -9184218314038204467}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -9184218314038204467}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: b46d3b99412dbe347b141be5c152feb9, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &-7967081491752496074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Kill (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -232, y: 1320}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -7967081491752496074}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -7967081491752496074}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ab90628141967a24898b89ec8140b294, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &-6834807390046320278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 104, y: 472}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -6834807390046320278}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -6834807390046320278}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ef19be89654b8074cb832d15ef77b8bf, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &-3531712796823536427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit Uninjured (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 88, y: 1320}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -3531712796823536427}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -3531712796823536427}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: a1c565be35aab404f8f21087496f057f, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &-2940454053978043344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Every 1 Second (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -216, y: 1064}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -2940454053978043344}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -2940454053978043344}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: 9288018ee2ddbc64eae529514e0fcfd9, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &-2844517765548393277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit Injured (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 408, y: 472}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -2844517765548393277}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -2844517765548393277}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: 9c2aabfaceff3c548b95573c845ef80a, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &-959447282777815153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Kill (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -200, y: 184}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -959447282777815153}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -959447282777815153}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ab90628141967a24898b89ec8140b294, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &-398438127343557751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Every 1 Second (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -184, y: -72}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: -398438127343557751}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: -398438127343557751}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: 9288018ee2ddbc64eae529514e0fcfd9, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0bbe43e99078bb42a093932b117f982, type: 3}
+  m_Name: Test Skill Inventory
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -398438127343557751}
+  - {fileID: 3368934625917896897}
+  - {fileID: -959447282777815153}
+  - {fileID: 7099483488362124714}
+  - {fileID: 8181465919978565596}
+  - {fileID: 1176319211672772431}
+  - {fileID: -6834807390046320278}
+  - {fileID: 3233842687289203463}
+  - {fileID: 7623954159701972294}
+  - {fileID: -2844517765548393277}
+  - {fileID: -2940454053978043344}
+  - {fileID: 7758674526438715798}
+  - {fileID: -7967081491752496074}
+  - {fileID: -3531712796823536427}
+  - {fileID: 4176534907770379460}
+  - {fileID: 9052706307588711707}
+  - {fileID: 868526001830084888}
+  - {fileID: -9184218314038204467}
+--- !u!114 &868526001830084888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Pistol Shot)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 324.65546, y: 1992.5431}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 868526001830084888}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 868526001830084888}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ee6ae05c3a8817e47ba6795a36a5efbc, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &1176319211672772431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: Every 1 Second (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -200, y: 472}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 1176319211672772431}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 1176319211672772431}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: 9288018ee2ddbc64eae529514e0fcfd9, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &3233842687289203463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Kill (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -216, y: 728}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 3233842687289203463}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 3233842687289203463}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ab90628141967a24898b89ec8140b294, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &3368934625917896897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 120, y: -72}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 3368934625917896897}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 3368934625917896897}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ef19be89654b8074cb832d15ef77b8bf, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &4176534907770379460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit Injured (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 392, y: 1064}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 4176534907770379460}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 4176534907770379460}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: 9c2aabfaceff3c548b95573c845ef80a, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &7099483488362124714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit Uninjured (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 120, y: 184}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 7099483488362124714}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 7099483488362124714}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: a1c565be35aab404f8f21087496f057f, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &7623954159701972294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit Uninjured (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 104, y: 728}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 7623954159701972294}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 7623954159701972294}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: a1c565be35aab404f8f21087496f057f, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &7758674526438715798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 88, y: 1064}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 7758674526438715798}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 7758674526438715798}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ef19be89654b8074cb832d15ef77b8bf, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &8181465919978565596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Hit Injured (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 424, y: -72}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 8181465919978565596}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 8181465919978565596}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: 9c2aabfaceff3c548b95573c845ef80a, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}
+--- !u!114 &9052706307588711707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a755628e211dd45ad3035c4c78ed1e, type: 3}
+  m_Name: Poison Pit)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 31.529999, y: 1870.3608}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 9052706307588711707}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 9052706307588711707}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: f833b2ff3341c478bafb7cc97d05a75f, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}

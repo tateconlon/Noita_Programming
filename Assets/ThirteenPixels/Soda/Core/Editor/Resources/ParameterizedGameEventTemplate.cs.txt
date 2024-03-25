@@ -1,0 +1,17 @@
+﻿// Copyright © Sascha Graeff/13Pixels.
+
+namespace ThirteenPixels.Soda
+{
+    using UnityEngine;
+    using UnityEngine.Events;
+
+    [CreateAssetMenu(menuName = "Soda/GameEvent/#TYPE#", order = 250)]
+    public class GameEvent#TYPE# : GameEventBase<#TYPE#>
+    {
+        [System.Serializable]
+        private class #TYPE#Event : UnityEvent<#TYPE#> { }
+        [SerializeField]
+        private #TYPE#Event _onRaiseGlobally = default;
+        protected override UnityEvent<#TYPE#> onRaiseGlobally => _onRaiseGlobally;
+    }
+}

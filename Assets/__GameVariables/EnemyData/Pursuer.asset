@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029fb3d1d685d2a4da32100ef872a44c, type: 3}
+  m_Name: Pursuer
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6721034192743957856, guid: abda755270cdb0349b4883f0a51fb017, type: 3}
+  displayName: Pursuer
+  sprite: {fileID: 21300000, guid: e54184b9a33684543a9de051830fd184, type: 3}
+  statValues:
+    _keyData:
+    - {fileID: 11400000, guid: 2e1601ef8594f5841932a834f1676706, type: 2}
+    - {fileID: 11400000, guid: b3741c11bfd268748854a533908e806d, type: 2}
+    - {fileID: 11400000, guid: 36e5a1480fd33bd4993e9ced94865313, type: 2}
+    - {fileID: 11400000, guid: 1f82099e0047a164d842d4a03911cb1b, type: 2}
+    - {fileID: 11400000, guid: 264115d662f172b4caa9711dcff0f9b0, type: 2}
+    _valueData:
+    - 1
+    - 0.5
+    - 1
+    - 10
+    - 50
+  exp: 1
+  baseStatusEffects: []

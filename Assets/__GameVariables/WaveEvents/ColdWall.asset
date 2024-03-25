@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb87e5ac990f47e1a15c82408bad34f7, type: 3}
+  m_Name: ColdWall
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 9c9c897342bda9944ba4c3f9259153a6, type: 2}
+  numEnemies: 100
+  spawnPattern: {fileID: 11400000, guid: 6e2b7e1a3bd447f4fbe629397b6ae075, type: 2}
+  customInits:
+  - {fileID: 11400000, guid: 37b4bd689fc0045448ba5ba228261209, type: 2}

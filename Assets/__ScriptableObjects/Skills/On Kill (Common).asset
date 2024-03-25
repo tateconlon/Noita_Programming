@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed00562f354efe42b88dcd185dcb3b2, type: 3}
+  m_Name: On Kill (Common)
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000, guid: 469f561a39b1d8640938f9e71f2c00d8, type: 2}
+  position: {x: -232, y: 1320}
+  ports:
+    keys:
+    - _parent
+    - _children
+    values:
+    - _fieldName: _parent
+      _node: {fileID: 11400000}
+      _typeQualifiedName: TriggerNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: _children
+      _node: {fileID: 11400000}
+      _typeQualifiedName: ActionNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  _definition: {fileID: 11400000, guid: ab90628141967a24898b89ec8140b294, type: 2}
+  maxNumChildren: 1
+  canBeMoved: 1
+  _parent: {fileID: 0}
+  _children: {fileID: 0}

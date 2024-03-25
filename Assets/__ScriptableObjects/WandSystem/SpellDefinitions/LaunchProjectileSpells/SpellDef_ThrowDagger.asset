@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73da7ddf6f754ee5a2a07121b62b7569, type: 3}
+  m_Name: SpellDef_ThrowDagger
+  m_EditorClassIdentifier: 
+  displayName: Throw Dagger
+  icon: {fileID: 1684690705, guid: 3ef19979c7f1e5148b88789282c510a2, type: 3}
+  description: A pointy lil blade
+  attackDescTooltip: A pointy lil blade
+  launcherPrefab: {fileID: 579414730179432609, guid: 0d0feb9d948afcc4b9a05029c20d72d2, type: 3}
+  projectilePrefab: {fileID: 6921759750869657186, guid: ccaef1d32dde9c646a411a1fe00b0fe1, type: 3}
+  projectilesIgnorePrevTarget: 1

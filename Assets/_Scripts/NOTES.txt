@@ -1,0 +1,56 @@
+- Note: I use SerializeReference on Effect.modifiers to support serialization of polymorphic C# classes, so if you ever
+        have trouble with that (e.g. when renaming AttributeModifiers, see to do below) include "SerializeReference" in
+        your searches when looking for help. SerializeReference is a good tool to know about, not sure if we covered it
+        when we learned about serialization
+- Note: bounce and pierce only work when their value is 2 or greater
+
+
+TODO:
+- crit chance and crit mult, here's how this guy handles it: https://github.com/tranek/GASDocumentation#cae-crit
+- ability to remove duration effects (not implemented yet)
+- find way to automatically apply the [MovedFrom] attribute to classes serialized with SerializeReference when renaming them?
+    - https://forum.unity.com/threads/serializereference-data-loss-when-class-name-is-changed.736874/#post-6557317
+    - e.g. will be needed when renaming any AttributeModifier class since they're serialized by reference
+- triggers like "on contribute to kill" which don't work like other triggers because they're not attached to the damage-causing actor
+    - seems like a trigger you'd implement by applying a tag to the enemy on hit then checking for tag on death, but you'd
+      need to instantiate a clone of the tag or something so it doesn't trigger for all instances of that trigger
+- I expect you'll want some generic components to do certain things in response to attributes changing and tags being added/removed,
+  e.g. activate/deactivate target GameObject based on whether or not this attribute is/isn't zero or this tag is/isn't present,
+  remove the 'alive' tag when health attribute <= 0
+
+
+BUG:
+- if a bomb hits multiple enemies and spawns a shotgun on hit, the shotguns won't be aimed at the other enemies hit by the bomb
+- bounce seems to be triggering when it shouldn't sometimes, and projectiles should probably also have health and the alive
+  tag instead of just pierce and bounce
+- on kill trigger activates twice
+
+
+Nice-to-haves:
+- custom inspector for Tags that draws the tag modification window for creating all tags (like in UE)
+- a custom property drawer for event delegates that draws the list of all responses so you can see at runtime what's listening
+
+
+Unreal Gameplay Ability System references:
+- Unreal docs: https://docs.unrealengine.com/5.2/en-US/gameplay-ability-system-for-unreal-engine/
+- Writeup on GitHub: https://github.com/tranek/GASDocumentation
+- Example Unity implementation: https://github.com/sjai013/unity-gameplay-ability-system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EAT SKITLE MAKE GAEM (have fun and can't wait to get back to it with ya!!)

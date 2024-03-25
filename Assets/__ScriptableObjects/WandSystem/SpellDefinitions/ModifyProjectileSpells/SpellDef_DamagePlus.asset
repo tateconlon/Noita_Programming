@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8086408bd3b347448cdbfc3a4dfae407, type: 3}
+  m_Name: SpellDef_DamagePlus
+  m_EditorClassIdentifier: 
+  displayName: Damage Plus
+  icon: {fileID: 21300000, guid: 51690c57a998449728f9621c64da4ab6, type: 3}
+  description: 'Attacks gets:
+
+    +1 Damage'
+  attackDescTooltip: +1 Damage
+  launcherMods: []
+  projectileMods:
+  - _referenceMode: 0
+    _localValue:
+      ownerInstantEffects: []
+      ownerDurationEffects:
+        _keyData: []
+        _valueData: []
+      ownerGlobalDurationEffects:
+        _keyData: []
+        _valueData: []
+      targetInstantEffects:
+      - modifiers:
+        - rid: 2148610935310516645
+        successChance: 1
+        tagInfo:
+          grantedTags: []
+          removeEffectsWithTags: []
+          applicationTags:
+            requiredTags: []
+            blockedTags: []
+          cancellationTags:
+            requiredTags: []
+            blockedTags: []
+      targetDurationEffects:
+        _keyData: []
+        _valueData: []
+      targetGlobalDurationEffects:
+        _keyData: []
+        _valueData: []
+      activationOwnerTags:
+        requiredTags: []
+        blockedTags: []
+      activationTargetTags:
+        requiredTags: []
+        blockedTags: []
+    _globalAbility: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 2148610935310516645
+      type: {class: AttributeAdd, ns: , asm: Assembly-CSharp}
+      data:
+        targetAttribute: {fileID: 11400000, guid: 8c7b6d356bc07e1489b3dc4988e9f48d, type: 2}
+        _valueToAdd: 1

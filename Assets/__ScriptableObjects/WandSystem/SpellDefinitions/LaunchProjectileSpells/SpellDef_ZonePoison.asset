@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73da7ddf6f754ee5a2a07121b62b7569, type: 3}
+  m_Name: SpellDef_ZonePoison
+  m_EditorClassIdentifier: 
+  displayName: Open Poison Pit
+  icon: {fileID: -749952818, guid: 3ef19979c7f1e5148b88789282c510a2, type: 3}
+  description: A nefarious pit that inflict poison
+  attackDescTooltip: A nefarious pit that inflict poison
+  launcherPrefab: {fileID: 7188916458827926816, guid: 275b3035c82516249927ef3ff5aacf3b, type: 3}
+  projectilePrefab: {fileID: 6288374496034766763, guid: 77cabc296c21adc46bc4f6a76e619f1b, type: 3}
+  projectilesIgnorePrevTarget: 0

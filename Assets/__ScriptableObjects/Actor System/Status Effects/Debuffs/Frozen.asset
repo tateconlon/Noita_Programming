@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d450da9317945588a076e4439df3257, type: 3}
+  m_Name: Frozen
+  m_EditorClassIdentifier: 
+  displayName: Frozen
+  icon: {fileID: 0}
+  effect:
+    modifiers:
+    - rid: 6682577970395086862
+    successChance: 1
+    tagInfo:
+      grantedTags:
+      - {fileID: 11400000, guid: 790622fcb60569f468c16971ea4d5ff0, type: 2}
+      removeEffectsWithTags: []
+      applicationTags:
+        requiredTags: []
+        blockedTags: []
+      cancellationTags:
+        requiredTags: []
+        blockedTags: []
+    periodicEffects:
+      effects: []
+      period: 0.25
+      waitOnePeriod: 0
+    stackingInfo:
+      stackingMode: 0
+      maxNumStacks: 25
+      maxStackedDuration: 30
+  references:
+    version: 2
+    RefIds:
+    - rid: 6682577970395086862
+      type: {class: AttributeAdd, ns: , asm: Assembly-CSharp}
+      data:
+        targetAttribute: {fileID: 11400000, guid: 7587b1bdfd7e6784c8799778b4b5d425, type: 2}
+        _valueToAdd: -0.5

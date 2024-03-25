@@ -1,0 +1,1 @@
+public class OnVariableChangeListenerFloat : OnVariableChangeListenerBase<float> { }

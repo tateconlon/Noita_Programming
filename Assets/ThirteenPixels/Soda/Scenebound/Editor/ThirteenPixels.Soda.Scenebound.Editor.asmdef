@@ -1,0 +1,19 @@
+{
+    "name": "ThirteenPixels.Soda.Scenebound.Editor",
+    "references": [
+        "GUID:a7bec831267a935418ea3486a9cd51d9",
+        "GUID:a72f9ce01f7bc4f4ba5ec3c2d1cee77c",
+        "GUID:9df11fc5e2b1b314a875eed64aa1ab56"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

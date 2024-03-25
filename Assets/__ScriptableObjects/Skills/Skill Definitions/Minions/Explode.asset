@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3b4d7df7504784ba78c0e4b6dbdbf3, type: 3}
+  m_Name: Explode
+  m_EditorClassIdentifier: 
+  displayName: Explode
+  description: 
+  icon: {fileID: 21300000, guid: a58d937102bc9f744badceb2aee4e34f, type: 3}
+  category: {fileID: 11400000, guid: a6ae4bfead630f6478db741f1e43e9a0, type: 2}
+  canRollInShop: 1
+  tier: 1
+  ignoreReceiver: 0
+  actorPrefab: {fileID: 3616757914270698687, guid: d19059aec9f19c3409b80a713aa27f37, type: 3}
+  abilityTriggerPrefab: {fileID: 0}
+  spawnActorAbility: {fileID: 11400000, guid: c7c76f2603e45524ca2b3c2120ef13c9, type: 2}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73da7ddf6f754ee5a2a07121b62b7569, type: 3}
+  m_Name: SpellDef_Knight
+  m_EditorClassIdentifier: 
+  displayName: Summon Knight
+  icon: {fileID: 702948341, guid: 3ef19979c7f1e5148b88789282c510a2, type: 3}
+  description: Ride on, mighty steed!
+  attackDescTooltip: Ride on, mighty steed!
+  launcherPrefab: {fileID: 3124206093949841337, guid: 68ee5bb02868b324386d060b1b4dc2cf, type: 3}
+  projectilePrefab: {fileID: 4732319051706154081, guid: eff3dc42636479147a7ecccfc6cc245e, type: 3}
+  projectilesIgnorePrevTarget: 1

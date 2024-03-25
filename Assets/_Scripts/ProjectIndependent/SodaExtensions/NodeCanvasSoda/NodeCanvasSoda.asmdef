@@ -1,0 +1,18 @@
+{
+    "name": "NodeCanvasSoda",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a7bec831267a935418ea3486a9cd51d9",
+        "GUID:66c2eb417c67ad849907d0769db96dbf",
+        "GUID:2289059ddf1745b4d80a0f184af99d6b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

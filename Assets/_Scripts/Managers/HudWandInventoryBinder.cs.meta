@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 9cef1a9fe340e4479866acdf2a8b49be
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - castingBlockDepthUIPrefab: {fileID: 5668219902985790936, guid: c63535fc2700b449c85ae4220ccb50e7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
